@@ -1,0 +1,25 @@
+# SPA fallback for the React Router application.
+#
+# Every application route (/, /products, /manufacturers-in-india, /blog,
+# /about, /contact, ...) must serve index.html so that a direct URL entry or a
+# browser refresh resolves client-side instead of returning a server 404.
+#
+# Vite copies this file from public/ into dist/ on build. Upload it alongside
+# dist/index.html in the Apache document root.
+#
+# Requires Apache mod_rewrite. If mod_rewrite is unavailable, the equivalent is:
+#   FallbackResource /index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Never rewrite the entry point itself or real files/directories.
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Everything else is an application route.
+  RewriteRule . /index.html [L]
+</IfModule>
