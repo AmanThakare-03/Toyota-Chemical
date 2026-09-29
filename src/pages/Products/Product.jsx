@@ -294,12 +294,12 @@ function Product() {
                   className="h-[430px] w-full object-cover opacity-90 lg:h-[500px]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#061729] via-transparent to-[#061729]/10" />
-                <div className="absolute left-5 top-5 border border-white/25 bg-[#061729]/70 px-3 py-2 font-mono text-[9px] font-bold tracking-wider text-white backdrop-blur-sm">
+                {/* <div className="absolute left-5 top-5 border border-white/25 bg-[#061729]/70 px-3 py-2 font-mono text-[9px] font-bold tracking-wider text-white backdrop-blur-sm">
                   0.3 – 1.2 MM SIZED BEADS
-                </div>
-                <div className="absolute bottom-20 right-5 border border-[#DF9B42]/50 bg-[#061729]/70 px-3 py-2 font-mono text-[9px] font-bold tracking-wider text-[#DF9B42] backdrop-blur-sm">
+                </div> */}
+                {/* <div className="absolute bottom-20 right-5 border border-[#DF9B42]/50 bg-[#061729]/70 px-3 py-2 font-mono text-[9px] font-bold tracking-wider text-[#DF9B42] backdrop-blur-sm">
                   CHEMICAL SYNTHESIS CONTROL
-                </div>
+                </div> */}
                 <div className="absolute bottom-0 left-0 right-0 grid grid-cols-2 border-t border-white/15 bg-[#061729]/80 backdrop-blur-sm">
                   <div className="p-4 font-mono text-[8px] uppercase tracking-wider text-slate-300">
                     RESIN MORPHOLOGY: SPHERICAL GEL / MACRO
