@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
+import waterSofteningGenerated from "../../assets/images/generated/water-softening-system.png";
+import waterSofteningSupportImage from "../../assets/images/water softning.jpg";
 
 const faqs = [["How does water softening resin work?", "A sodium-form strong acid cation resin exchanges the calcium and magnesium hardness in the water for sodium. When the resin exhausts it is regenerated with common salt (brine), which recharges it with sodium and returns it to service."], ["Which AGRION grade should I use — C-60 or C-80?", "AGRION C-60 for standard softening, and AGRION C-80 — a higher-crosslink grade — for harder water, higher temperatures or heavier cycling where longer working life matters."], ["Why has my water softener stopped removing hardness?", "Usually the resin is fouled (iron, organics), degraded by chlorine or age, or simply exhausted beyond regeneration. A change to a fresh softening grade restores capacity — share your symptoms and water details and we’ll advise."], ["How is softening resin regenerated?", "On the sodium cycle, with a common salt (brine) solution. When hardness starts to break through, brine recharges the resin with sodium and it returns to service — a low-cost cycle repeated over many years."], ["Can I use softening for boiler feed or cooling water?", "Yes. Softening protects boilers, cooling towers and heat exchangers from scale. For higher-pressure boilers, softening is combined with demineralisation — see boiler feed water ."], ["What bead size and capacity do the softening grades have?", "Particle size is 0.3–1.2 mm; AGRION C-60 has a total exchange capacity of 1.7 meq/ml and C-80 of 1.8 meq/ml. Full specifications are in each grade’s TDS."], ["Can AGRION softening resin replace the resin in my softener?", "In most cases, yes. Match on ionic form (sodium), capacity and bead size and an AGRION grade drops straight into your softener. Send us your current grade or datasheet and we’ll confirm the equivalent."]];
 const stages = [
@@ -8,16 +10,17 @@ const stages = [
   { n:"+", duty:"Choosing a grade", title:"Standard or high-crosslink", tag:"The grade", text:"AGRION C-60 suits standard softening; AGRION C-80, a higher-crosslink grade, lasts longer under harder water, higher temperatures and heavier cycling. Tell us your water and duty and we’ll confirm the grade.", grades:["AGRION C-60","AGRION C-80"], link:"/products/cation-exchange-resins", linkText:"Cation exchange resins" },
 ];
 
-function ImagePlaceholder({ second=false }) {
-  return <div className="relative border-2 border-dashed border-[#C8DCEC] bg-gradient-to-br from-[#F7FAFD] to-[#EFF6FC] p-6 sm:p-8 flex flex-col sm:flex-row gap-5 items-start my-8">
-    <div className="w-14 h-14 shrink-0 bg-[#0A2C4B] text-white grid place-items-center text-2xl shadow-lg">📷</div>
-    <div>
-      <span className="inline-block font-mono text-[10px] uppercase tracking-[.16em] font-bold text-[#B27B34] bg-[#F4E7D2] px-3 py-1">Image to add</span>
-      <h4 className="font-serif text-xl text-[#0A2C4B] font-bold mt-2">{second ? "Close-up of softener resin beads / softening diagram" : "Water softener pressure vessels with brine tank"}</h4>
-      <p className="text-slate-600 text-sm mt-2">{second ? "A product-level visual to break up the FAQ and reinforce the grade." : "A wide industrial shot that sets the context for the page."}</p>
-      <p className="text-xs sm:text-sm text-slate-500 italic bg-white border border-[#C8DCEC] p-3 mt-3"><b className="text-[#0A2C4B] not-italic">Prompt:</b> {second ? "A crisp macro of amber sodium-form cation resin beads in a gloved hand or lab dish with soft bokeh — or a simple labelled diagram of the softening cycle (hard water → softener (Na form) → soft water; brine regeneration) in the navy/green brand palette. Clean, technical, landscape 16:9." : "A clean industrial water-softening plant showing FRP or steel softener pressure vessels with a brine regeneration tank, piping and control valves; blue-and-steel palette, professional documentary style, no people, landscape 16:9. Optional light AGRION / Toyota Chemical Industries branding on the vessels."}</p>
-    </div>
-  </div>;
+function ImagePlaceholder({ second = false }) {
+  return (
+    <figure className="my-8 overflow-hidden border border-[#C8DCEC] bg-[#F7FAFD] shadow-sm">
+      <img
+        src={second ? waterSofteningSupportImage : waterSofteningGenerated}
+        alt={second ? "Industrial water softener vessel and brine regeneration system" : "Industrial water softening system and sodium-form resin cycle"}
+        loading="lazy"
+        className="block w-full aspect-[16/9] object-cover object-center"
+      />
+    </figure>
+  );
 }
 
 export default function WaterSoftening() {

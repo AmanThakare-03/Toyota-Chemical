@@ -44,6 +44,11 @@ export default function Industries() {
 .flow{background:#eef3f7;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.sec-head{max-width:760px;margin-bottom:40px}.sec-head h2{margin:12px 0 0}.lead{font-size:16px;line-height:1.7;color:#66737e}
 .isec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.isec{position:relative;display:flex;flex-direction:column;min-height:245px;padding:30px;background:white;border:1px solid var(--line);color:#181c1e;box-shadow:0 4px 16px rgba(10,44,75,.035);transition:.3s;overflow:hidden}.isec:before{content:"";position:absolute;left:0;top:0;width:4px;height:100%;background:var(--navy)}.isec:nth-child(2n):before{background:var(--gold)}.isec:hover{transform:translateY(-5px);box-shadow:0 16px 35px rgba(10,44,75,.09)}
 .isec .k{font-size:9px;line-height:1.4;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:16px}.isec b{font-family:"EB Garamond",serif;font-size:28px;line-height:1.15;color:var(--deep);margin-bottom:14px}.isec .d{font-size:14px;line-height:1.7;color:#65717b;flex:1}.isec .go{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-top:22px}
+.isec.image-card{min-height:360px;justify-content:flex-end;padding:34px 32px 30px;border:0;background:var(--deep);color:#fff;box-shadow:0 22px 48px -24px rgba(6,24,43,.55);clip-path:polygon(0 0,92% 0,100% 8%,100% 100%,0 100%);isolation:isolate;overflow:hidden}
+.isec.image-card .card-bg{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.01)}
+.isec.image-card:before{content:"";position:absolute;inset:0;z-index:1;width:auto;height:auto;background:linear-gradient(180deg,rgba(6,24,43,.08) 20%,rgba(6,24,43,.52) 58%,rgba(6,24,43,.94) 100%);pointer-events:none}
+.isec.image-card>span,.isec.image-card>b{position:relative;z-index:2}.isec.image-card .k{color:var(--gold2);margin-bottom:8px}.isec.image-card b{color:#fff;margin-bottom:10px}.isec.image-card .d{color:rgba(255,255,255,.88);flex:0 0 auto}.isec.image-card .go{color:var(--gold2);margin-top:16px}
+
 .band{position:relative;background:var(--navy);color:white;overflow:hidden}.band:before{content:"";position:absolute;inset:0;background-image:linear-gradient(to right,rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.04) 1px,transparent 1px);background-size:32px 32px}.band .wrap{position:relative;text-align:center;padding-top:64px!important;padding-bottom:64px!important}.band h2{color:white;max-width:850px;margin:0 auto}.band p{max-width:720px;margin:16px auto 28px;color:#d2dce4}.band .acts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .clients{background:white;text-align:center;border-top:1px solid var(--line)}.clients h2{margin-top:10px!important}.marquee{margin-top:34px;overflow:hidden}.track{display:flex;width:max-content;animation:cscroll 55s linear infinite}.marquee:hover .track{animation-play-state:paused}.chip{width:184px;height:108px;flex:0 0 auto;margin-right:18px;background:white;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:18px;box-shadow:0 4px 14px rgba(10,44,75,.04)}.chip img{max-height:65px;width:auto;object-fit:contain}@keyframes cscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(max-width:1100px){.wrap,.ribbon{padding-left:40px;padding-right:40px}.isec-grid{grid-template-columns:repeat(2,1fr)}}
@@ -98,37 +103,43 @@ export default function Industries() {
       <p className="lead">Each page answers one industry&rsquo;s water problems completely &mdash; and points to the exact AGRION resins.</p>
     </div>
     <div className="isec-grid">
-      <Link className="isec" to="/industries/power-thermal-plants">
+      <Link className="isec image-card" to="/industries/power-thermal-plants">
+        <img className="card-bg" src="https://images.unsplash.com/photo-1773517459626-f468797f22cc?auto=format&fit=crop&w=1200&q=80" alt="Power and thermal plant industrial machinery" loading="lazy" />
         <span className="k">Boiler feed · DM · condensate</span>
         <b>Power / Thermal Plants</b>
         <span className="d">Boiler feed softening, demineralisation, dealkalisation and condensate polishing.</span>
         <span className="go">Explore sector &rarr;</span>
       </Link>
-      <Link className="isec" to="/industries/sugar-processing">
+      <Link className="isec image-card" to="/industries/sugar-processing">
+        <img className="card-bg" src="https://images.unsplash.com/photo-1676035970014-1309dbbc3c6c?auto=format&fit=crop&w=1200&q=80" alt="Sugar processing factory" loading="lazy" />
         <span className="k">Decolourise · soften · DM</span>
         <b>Sugar Processing</b>
         <span className="d">Liquor decolourisation, softening and demineralisation for cane and refined sugar.</span>
         <span className="go">Explore sector &rarr;</span>
       </Link>
-      <Link className="isec" to="/industries/textile-dye">
+      <Link className="isec image-card" to="/industries/textile-dye">
+        <img className="card-bg" src="https://images.unsplash.com/photo-1741176505800-caaa3a52631a?auto=format&fit=crop&w=1200&q=80" alt="Textile manufacturing and dye industry" loading="lazy" />
         <span className="k">Soften · DM · effluent</span>
         <b>Textile & Dye</b>
         <span className="d">Soft water for consistent dyeing, demineralised boiler feed and effluent colour removal.</span>
         <span className="go">Explore sector &rarr;</span>
       </Link>
-      <Link className="isec" to="/industries/chemical-intermediates">
+      <Link className="isec image-card" to="/industries/chemical-intermediates">
+        <img className="card-bg" src="https://images.unsplash.com/photo-1636747423727-2d39d0aa9796?auto=format&fit=crop&w=1200&q=80" alt="Chemical processing plant" loading="lazy" />
         <span className="k">DM · heavy metal · ZLD</span>
         <b>Chemical & Intermediates</b>
         <span className="d">Process demineralisation, softening, heavy-metal removal and ZLD.</span>
         <span className="go">Explore sector &rarr;</span>
       </Link>
-      <Link className="isec" to="/industries/paper-pulp">
+      <Link className="isec image-card" to="/industries/paper-pulp">
+        <img className="card-bg" src="https://images.unsplash.com/photo-1564038057948-09f845445508?auto=format&fit=crop&w=1200&q=80" alt="Paper and pulp mill" loading="lazy" />
         <span className="k">Soften · DM · polish</span>
         <b>Paper & Pulp</b>
         <span className="d">Process water softening, demineralisation and condensate polishing.</span>
         <span className="go">Explore sector &rarr;</span>
       </Link>
-      <Link className="isec" to="/industries/food-beverage">
+      <Link className="isec image-card" to="/industries/food-beverage">
+        <img className="card-bg" src="https://images.unsplash.com/photo-1530037335614-e68828dcf258?auto=format&fit=crop&w=1200&q=80" alt="Food and beverage production facility" loading="lazy" />
         <span className="k">Soften · demin · decolourise</span>
         <b>Food & Beverage</b>
         <span className="d">Softening, demineralisation, decolourisation and polishing for food and beverage water.</span>

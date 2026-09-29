@@ -36,7 +36,7 @@ export const industryLinks = [
   { name: "Food & Beverage", path: "/industries/food-beverage" },
   { name: "Paper Pulp", path: "/industries/paper" },
   { name: "Power Thermal", path: "/industries/power-thermal" },
-  { name: "Sugar SEO Kit", path: "/industries/sugar-seo-kit" },
+  { name: "Sugar Refinery", path: "/industries/sugar-seo-kit" },
   { name: "Textile", path: "/industries/textile" },
 ];
 

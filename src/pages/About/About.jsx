@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router";
+import aboutUsHeroImage from "../../assets/images/generated/about-us-ion-exchange-manufacturing-hero.png";
 
 const faqData = [
   {
@@ -350,13 +351,9 @@ function AboutUs() {
 
                       <div className="relative overflow-hidden aspect-[4/3] bg-slate-900 border border-slate-200">
                         <img
-                          src="https://lh3.googleusercontent.com/aida/AEtjO1WiUXCGqPiDPUUtYXQQQAreJm-5UqEjnRuul8JM8TMxx6DijOUlHgd18TBuZmdBnC1ZidT5hs9ZzLeDtZLRntja_edw3A_0Y9g9MVkPXoWEaD4etFPTPBmQ3yKjfBvgJ3JG2QDn8qiegEnQukqfk8KBo77U6Rtl1x16VCsgVpAgVWn7poxb4g5ENHNUtcUuYuMQQ2gNrVhNLY-fx6VBdXieBJLjjssPA7oWctHUrJOpTF0_aIfjYIkf-w"
+                          src={aboutUsHeroImage}
                           alt="Toyota Chemical modern chemical plant polymerization vessels"
                           className="w-full h-full object-cover object-center brightness-95 contrast-105 hover:scale-105 transition-transform duration-700"
-                          onError={(e) => {
-                            e.currentTarget.src =
-                              "https://placehold.co/800x600?text=Toyota+Chemical+Polymerisation+Plant";
-                          }}
                         />
 
                         <div className="absolute bottom-3 left-3 bg-[#0A2C4B]/90 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono-custom text-[#B27B34] border border-[#B27B34]/30">

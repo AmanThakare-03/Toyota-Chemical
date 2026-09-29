@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-import bead1 from "../../../assets/images/bead1.png";
+import bead1 from "../../../assets/images/generated/resin-specifications-sieve-analysis.png";
 import bead2 from "../../../assets/images/bead2.png";
 
 export default function ResinSpecificationsExplained() {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-import dmplant1 from "../../../assets/images/DMPlant1.png";
+import dmplant1 from "../../../assets/images/generated/dm-plant-resin-replacement-guide.png";
 import dmplant2 from "../../../assets/images/DMPlant2.png";
 
 export default function DMPlantResinReplacementGuide() {

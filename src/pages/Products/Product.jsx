@@ -5,6 +5,7 @@ import anionCardImage from "../../assets/images/anion-exchange-resins.jpg";
 import mixedBedCardImage from "../../assets/images/mixed-bed-resins.jpg";
 import softenerCardImage from "../../assets/images/water softner resin.jpg";
 import specialtyCardImage from "../../assets/images/speciality resin.jpg";
+import productMainHeroGenerated from "../../assets/images/generated/product-main-hero-generated.png";
 
 const categories = [
   {
@@ -288,7 +289,7 @@ function Product() {
             <div className="lg:col-span-5">
               <div className="relative overflow-hidden border border-[#0A2C4B]/10 bg-[#061729] shadow-[0_24px_48px_-12px_rgba(10,44,75,0.12)]">
                 <img
-                  src="https://lh3.googleusercontent.com/aida/AEtjO1WOLlWSaO3IoVpSdqieFOqzFqyCwDAm2HSruU__Eb2ZMlefXQjJ2LwMizE6SONJnrwRDD0eiKCVoTH49541zlKvG44zfl1ond9ZRUsbAJLNdjPdESjYk0BPKBKnt_M1SeGU1Sogu3AZMSIQTuXStp_j4F_iW55xDpIW9bCsiGjSJafwSSL1HzymYeM4ZOiFjr2oQjv8U__UW4LnMeOQGqBRLgTwXrrz1zVE5tM6nd9GLfhgGpd6YvxPeag"
+                  src={productMainHeroGenerated}
                   alt="Studio luxury macro photography of vibrant blue and golden amber ion exchange resin spherical beads"
                   className="h-[430px] w-full object-cover opacity-90 lg:h-[500px]"
                 />

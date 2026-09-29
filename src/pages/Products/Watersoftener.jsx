@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
+import cationCardImage from "../../assets/images/cation exchange resin.jpg";
+import anionCardImage from "../../assets/images/anion-exchange-resins.jpg";
+import mixedBedCardImage from "../../assets/images/mixed-bed-resins.jpg";
+import specialtyCardImage from "../../assets/images/speciality resin.jpg";
+import softenerCardImage from "../../assets/images/water softner resin.jpg";
+import waterSofteningAppImage from "../../assets/images/water softning.jpg";
+import boilerAppImage from "../../assets/images/bolier feed water.jpg";
+import dmPlantAppImage from "../../assets/images/Dm plant application.jpg";
 
 const grades = {
   std: {
@@ -286,28 +294,11 @@ function Hero() {
                 <div className="w-full h-80 sm:h-96 bg-gradient-to-br from-[#F6F9FC] via-white to-amber-50 flex items-center justify-center relative">
                   <div className="absolute inset-0 opacity-40 resin-grid" />
 
-                  <div className="relative w-64 h-64 rounded-full border-2 border-[#B27B34]/50 shadow-2xl flex items-center justify-center">
-                    <div className="w-44 h-44 rounded-full border border-[#0A2C4B]/25 bg-white/80 shadow-inner flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="font-serif text-5xl font-bold text-[#0A2C4B]">C</div>
-                        <div className="text-[10px] font-mono tracking-widest text-[#B27B34] mt-1">
-                          AGRION
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {Array.from({ length: 18 }).map((_, i) => (
-                    <span
-                      key={i}
-                      className="absolute w-3 h-3 rounded-full bg-[#B27B34]/70 border border-white shadow"
-                      style={{
-                        left: `${14 + ((i * 37) % 72)}%`,
-                        top: `${12 + ((i * 53) % 74)}%`,
-                        transform: "translate(-50%,-50%)",
-                      }}
-                    />
-                  ))}
+                  <img
+                    src={softenerCardImage}
+                    alt="Water softener ion exchange resin beads"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+                  />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A2C4B]/25 via-transparent to-transparent" />
 
@@ -322,8 +313,8 @@ function Hero() {
               </div>
 
               <div className="mt-3 grid grid-cols-12 gap-3 items-center bg-[#F6F9FC] p-3 border border-slate-200">
-                <div className="col-span-4 relative overflow-hidden border border-slate-300 h-16 flex items-center justify-center bg-white">
-                  <span className="font-serif text-2xl font-bold text-[#0A2C4B]">C</span>
+                <div className="col-span-4 relative overflow-hidden border border-slate-300 h-16 bg-white">
+                  <img src={softenerCardImage} alt="Water softener ion exchange resin beads" className="w-full h-full object-cover object-center" />
                 </div>
                 <div className="col-span-8">
                   <div className="text-[10px] font-mono text-[#B27B34] uppercase tracking-wider font-semibold">
@@ -1043,17 +1034,15 @@ function MainContent() {
 
               <ul className="text-xs font-medium space-y-2.5 text-slate-700">
                 {[
-                  ["Cation Exchange Resins", "/products/cation-exchange-resins"],
-                  ["Anion Exchange Resins", "/products/anion-exchange-resins"],
-                  ["Mixed Bed Resins", "/products/mixed-bed-resins"],
-                  ["Specialty Resins", "/products/specialty-resins"],
-                ].map(([item, href]) => (
+                  { item: "Cation Exchange Resins", href: "/products/cation-exchange-resins", image: cationCardImage },
+                  { item: "Anion Exchange Resins", href: "/products/anion-exchange-resins", image: anionCardImage },
+                  { item: "Mixed Bed Resins", href: "/products/mixed-bed-resins", image: mixedBedCardImage },
+                  { item: "Specialty Resins", href: "/products/specialty-resins", image: specialtyCardImage },
+                ].map(({ item, href, image }) => (
                   <li key={item}>
-                    <a
-                      className="hover:text-[#1868A8] flex items-center justify-between py-1"
-                      href={href}
-                    >
-                      <span>{item}</span>
+                    <a className="hover:text-[#1868A8] flex items-center gap-3 py-1" href={href}>
+                      <img src={image} alt={item} className="h-12 w-12 object-cover border border-slate-200 shrink-0" />
+                      <span className="flex-1">{item}</span>
                       <span className="text-[#B27B34] font-bold">→</span>
                     </a>
                   </li>
@@ -1068,16 +1057,14 @@ function MainContent() {
 
               <ul className="text-xs font-medium space-y-2.5 text-slate-700">
                 {[
-                  ["Water Softening", "/applications/water-softener-resin"],
-                  ["Boiler Feed Water", "/applications/boiler-feed-water"],
-                  ["DM Plant / Demineralisation", "/applications/dm-plant-resin"],
-                ].map(([item, href]) => (
+                  { item: "Water Softening", href: "/applications/water-softener-resin", image: waterSofteningAppImage },
+                  { item: "Boiler Feed Water", href: "/applications/boiler-feed-water", image: boilerAppImage },
+                  { item: "DM Plant / Demineralisation", href: "/applications/dm-plant-resin", image: dmPlantAppImage },
+                ].map(({ item, href, image }) => (
                   <li key={item}>
-                    <a
-                      className="hover:text-[#1868A8] flex items-center justify-between py-1"
-                      href={href}
-                    >
-                      <span>{item}</span>
+                    <a className="hover:text-[#1868A8] flex items-center gap-3 py-1" href={href}>
+                      <img src={image} alt={item} className="h-12 w-12 object-cover border border-slate-200 shrink-0" />
+                      <span className="flex-1">{item}</span>
                       <span className="text-[#B27B34] font-bold">→</span>
                     </a>
                   </li>

@@ -1,17 +1,22 @@
 import React from "react";
 import { Link } from "react-router";
+import boilerFeedGenerated from "../../assets/images/generated/boiler-feed-water-treatment.png";
+import mixedBedSupportImage from "../../assets/images/generated/mixed-bed-condensate-polishing.png";
 
 const faqs = [["Which resins treat boiler feed water?", "Softening (AGRION C-80 / C-60) and dealkalisation (AGRION WC-50) for the make-up, two-bed demineralisation (AGRION C-100 H + A-400) for higher-pressure boilers, and a mixed bed (AGRION MB-1151) for condensate polishing."], ["Why remove alkalinity from boiler feed water?", "Bicarbonate alkalinity breaks down to CO₂ in the boiler, releasing carbon dioxide that corrodes the condensate lines. A weak acid cation resin (AGRION WC-50) removes it, and also cuts regenerant cost on the downstream demineraliser."], ["Do I need demineralisation, or is softening enough?", "Low-pressure boilers may run on softened, dealkalised make-up. Higher-pressure boilers need demineralised feed water — residual dissolved solids and silica cause scale and turbine deposits at pressure. Share your boiler pressure and we’ll advise the right train."], ["Which resin removes silica for high-pressure boilers?", "A Type 1 strong base anion resin such as AGRION A-400 — Type 1 chemistry gives the high silica and CO₂ removal that high-pressure boiler feed water needs to protect turbine blades."], ["Do you supply resin for condensate polishing?", "Yes — the AGRION MB-1151 mixed bed polishes returning condensate to very low conductivity, removing corrosion products and dissolved ions before they re-enter the boiler."], ["How do I know when to replace boiler feed water resin?", "Rising treated-water conductivity, hardness or silica leakage, shorter runs between regenerations, or higher regenerant use all point to exhaustion or degradation. Share your trends and we’ll advise whether a change is due."], ["Can AGRION resins replace the ones we run today?", "In most cases, yes. Match on resin type, ionic form, capacity and bead size and an AGRION grade drops into the same vessel. Send us your current grades or datasheets and we’ll confirm the equivalents."]];
 const stages = [{"n": "1", "duty": "Stage 1", "title": "Soften & dealkalise the make-up", "tag": "The grade", "text": "Sodium-cycle softening removes calcium and magnesium to stop scale; a weak acid cation resin removes bicarbonate alkalinity, cutting boiler CO₂ and condensate-line corrosion.", "items": [{"text": "AGRION C-80", "href": null}, {"text": "AGRION WC-50", "href": null}, {"text": "Water softener resins", "href": "/products/water-softener-resins"}]}, {"n": "2", "duty": "Stage 2", "title": "Demineralise for higher-pressure boilers", "tag": "The grade", "text": "Two-bed demineralisation strips dissolved salts and silica — critical for high-pressure boilers where silica carry-over damages turbine blades.", "items": [{"text": "AGRION C-100 H", "href": null}, {"text": "AGRION A-400", "href": null}, {"text": "DM plant", "href": "/applications/dm-plant-resin"}]}, {"n": "3", "duty": "Stage 3", "title": "Polish the returning condensate", "tag": "The grade", "text": "A mixed bed polishes returning condensate to very low conductivity, removing corrosion products and dissolved ions before they reach the boiler — protecting the steam cycle.", "items": [{"text": "AGRION MB-1151", "href": null}, {"text": "Mixed bed resins", "href": "/products/mixed-bed-resins"}]}];
 
-function ImagePlaceholder({ second=false }) {
-  return <div className="relative border-2 border-dashed border-[#C8DCEC] bg-gradient-to-br from-[#F7FAFD] to-[#EFF6FC] p-6 sm:p-8 flex flex-col sm:flex-row gap-5 items-start my-8">
-    <div className="w-14 h-14 shrink-0 bg-[#0A2C4B] text-white grid place-items-center text-2xl shadow-lg">📷</div>
-    <div><span className="inline-block font-mono text-[10px] uppercase tracking-[.16em] font-bold text-[#B27B34] bg-[#F4E7D2] px-3 py-1">Image to add</span>
-      <h4 className="font-serif text-xl text-[#0A2C4B] font-bold mt-2">{second ? "Close-up of AGRION resin beads / the treatment train" : "Boiler house / steam plant with feed-water treatment skids"}</h4>
-      <p className="text-slate-600 text-sm mt-2">{second ? "A product-level visual to break up the FAQ and reinforce the grades." : "A wide industrial shot that sets the context for the whole page."}</p>
-      <p className="text-xs sm:text-sm text-slate-500 italic bg-white border border-[#C8DCEC] p-3 mt-3"><b className="text-[#0A2C4B] not-italic">Prompt:</b> {second ? "A crisp macro photograph of amber and blue ion-exchange resin beads (cation + anion) in a gloved hand or a lab dish, sharp focus with soft bokeh; alternatively a simple labelled diagram of the boiler-feed train — softener → dealkaliser → DM → mixed-bed condensate polisher — in the navy/green brand palette. Clean, technical, landscape 16:9." : "A clean, well-lit industrial boiler house showing a packaged boiler and stainless-steel water-treatment skids (softener / DM / mixed-bed pressure vessels with piping and valves) in the foreground; blue-and-steel palette, professional documentary style, no people, landscape 16:9. Optional light AGRION/Toyota Chemical Industries branding on the vessels."}</p>
-    </div></div>;
+function ImagePlaceholder({ second = false }) {
+  return (
+    <figure className="my-8 overflow-hidden border border-[#C8DCEC] bg-[#F7FAFD] shadow-sm">
+      <img
+        src={second ? mixedBedSupportImage : boilerFeedGenerated}
+        alt={second ? "Condensate polishing stage supporting the boiler feed water treatment train" : "Boiler feed water treatment system with softener, dealkaliser, DM and mixed-bed polishing"}
+        loading="lazy"
+        className="block w-full aspect-[16/9] object-cover object-center"
+      />
+    </figure>
+  );
 }
 
 export default function BoilerFeedWater() {

@@ -1,6 +1,7 @@
 // import React, { useState } from "react";
 // import { Link } from "react-router";
 
+
 // const faqs = [
 //   {
 //     question: "What is the minimum order quantity?",
@@ -1098,6 +1099,7 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router";
+import contactQualityLabGenerated from "../../assets/images/generated/contact-quality-lab-generated.png";
  function SectionLabel({ children, light = false }) {
    return (
      <div
@@ -1264,7 +1266,7 @@ export default function Contact() {
             <div className="relative bg-white border border-brand-blueprint p-2.5 shadow-xl corner-brackets">
               {/*ating Specification Overla*/}
               <div className="relative overflow-hidden bg-slate-900 aspect-square max-h-[380px] w-full">
-                <img alt="Toyota Chemical Ion Exchange Resin Spherical Beads under laboratory inspection" className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1XZqPmXlDlQvqKCdzRu7x-xRH-yllp8bDpfUhaJPU3yphJMwA7Skjky7GFpxSW3YJHvAeutpdlxDWsIFMPchIspTowvrPB9xXslzxeQRDDCzTGPwvwa7eC6kBmy0EFT_Z8VBRwkHrTuPnddggb5l2TBnHIHVPBgNQxAl_BDy4ZDenwFF6M643uGAnQ5gVcH1TiGOUoOZokBiBAduehQvVsSTbh5zVqi2agcEg7Szyh4rIL9OXAwx_xGZpY" />
+                <img alt="Toyota Chemical Ion Exchange Resin Spherical Beads under laboratory inspection" className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700 ease-out" src={contactQualityLabGenerated} />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent"></div>
                 {/*rlay Diagnosti*/}
                 <div className="absolute top-3 left-3 bg-brand-dark/90 backdrop-blur border border-brand-gold/50 px-2.5 py-1 text-[10px] font-mono text-brand-goldLight flex items-center gap-1.5">

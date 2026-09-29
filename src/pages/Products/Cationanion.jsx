@@ -3,6 +3,14 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
 
 import AppLink from "../../components/common/AppLink";
+import cationCardImage from "../../assets/images/cation exchange resin.jpg";
+import anionCardImage from "../../assets/images/anion-exchange-resins.jpg";
+import mixedBedCardImage from "../../assets/images/mixed-bed-resins.jpg";
+import softenerCardImage from "../../assets/images/water softner resin.jpg";
+import specialtyCardImage from "../../assets/images/speciality resin.jpg";
+import dmPlantAppImage from "../../assets/images/Dm plant application.jpg";
+import waterSofteningAppImage from "../../assets/images/water softning.jpg";
+import dealkalisationAppImage from "../../assets/images/dealkalisation-resin.jpg";
 
 
 const gradeFinder = {
@@ -124,18 +132,11 @@ function Hero() {
                 <div className="w-full h-80 sm:h-96 bg-gradient-to-br from-[#F6F9FC] via-white to-amber-50 flex items-center justify-center relative">
                   <div className="absolute inset-0 opacity-40 resin-grid" />
 
-                  <div className="relative w-64 h-64 rounded-full border-2 border-[#B27B34]/50 shadow-2xl flex items-center justify-center">
-                    <div className="w-44 h-44 rounded-full border border-[#0A2C4B]/25 bg-white/80 shadow-inner flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="font-serif text-5xl font-bold text-[#0A2C4B]">C</div>
-                        <div className="text-[10px] font-mono tracking-widest text-[#B27B34] mt-1">AGRION</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {Array.from({ length: 18 }).map((_, i) => (
-                    <span key={i} className="absolute w-3 h-3 rounded-full bg-[#B27B34]/70 border border-white shadow" style={{ left: `${14 + ((i * 37) % 72)}%`, top: `${12 + ((i * 53) % 74)}%`, transform: "translate(-50%,-50%)" }} />
-                  ))}
+                  <img
+                    src={cationCardImage}
+                    alt="Cation exchange resin beads"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+                  />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A2C4B]/25 via-transparent to-transparent" />
 
@@ -150,8 +151,8 @@ function Hero() {
               </div>
 
               <div className="mt-3 grid grid-cols-12 gap-3 items-center bg-[#F6F9FC] p-3 border border-slate-200">
-                <div className="col-span-4 relative overflow-hidden border border-slate-300 h-16 flex items-center justify-center bg-white">
-                  <span className="font-serif text-2xl font-bold text-[#0A2C4B]">C</span>
+                <div className="col-span-4 relative overflow-hidden border border-slate-300 h-16 bg-white">
+                  <img src={cationCardImage} alt="Cation exchange resin beads" className="w-full h-full object-cover object-center" />
                 </div>
                 <div className="col-span-8">
                   <div className="text-[10px] font-mono text-[#B27B34] uppercase tracking-wider font-semibold">Product Family</div>
@@ -702,11 +703,11 @@ function MainContent() {
               <div className="text-xs font-mono uppercase tracking-widest text-[#B27B34] font-bold mb-3">Related products</div>
               <ul className="space-y-2.5 text-xs text-slate-600">
                 {[
-                  ["Anion Exchange Resins", "/products/anion"],
-                  ["Mixed Bed Resins", "/products/mixedbed"],
-                  ["Water Softener Resins", "/products/watersoftener"],
-                  ["Specialty Resins", "/products/specialty"],
-                ].map(([item, path]) => <li key={item} className="border-b border-slate-100 pb-2"><Link className="hover:text-[#B27B34]" to={path}>{item} →</Link></li>)}
+                  { item: "Anion Exchange Resins", path: "/products/anion", image: anionCardImage },
+                  { item: "Mixed Bed Resins", path: "/products/mixedbed", image: mixedBedCardImage },
+                  { item: "Water Softener Resins", path: "/products/watersoftener", image: softenerCardImage },
+                  { item: "Specialty Resins", path: "/products/specialty", image: specialtyCardImage },
+                ].map(({ item, path, image }) => <li key={item} className="border-b border-slate-100 pb-2"><Link className="group flex items-center gap-3 hover:text-[#B27B34]" to={path}><img src={image} alt={item} className="h-12 w-12 object-cover border border-slate-200 shrink-0" /><span>{item} →</span></Link></li>)}
               </ul>
             </Spotlight>
 
@@ -714,10 +715,10 @@ function MainContent() {
               <div className="text-xs font-mono uppercase tracking-widest text-[#B27B34] font-bold mb-3">Related applications</div>
               <ul className="space-y-2.5 text-xs text-slate-600">
                 {[
-                  ["DM Plant / Demineralisation", "/applications/dm-plant-resin"],
-                  ["Water Softening", "/applications/water-softener-resin"],
-                  ["Dealkalisation", "/applications/dealkalisation-resin"],
-                ].map(([item, path]) => <li key={item} className="border-b border-slate-100 pb-2"><Link className="hover:text-[#B27B34]" to={path}>{item} →</Link></li>)}
+                  { item: "DM Plant / Demineralisation", path: "/applications/dm-plant-resin", image: dmPlantAppImage },
+                  { item: "Water Softening", path: "/applications/water-softener-resin", image: waterSofteningAppImage },
+                  { item: "Dealkalisation", path: "/applications/dealkalisation-resin", image: dealkalisationAppImage },
+                ].map(({ item, path, image }) => <li key={item} className="border-b border-slate-100 pb-2"><Link className="group flex items-center gap-3 hover:text-[#B27B34]" to={path}><img src={image} alt={item} className="h-12 w-12 object-cover border border-slate-200 shrink-0" /><span>{item} →</span></Link></li>)}
               </ul>
             </Spotlight>
 

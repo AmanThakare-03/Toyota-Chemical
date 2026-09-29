@@ -236,7 +236,7 @@ import React from "react";
 
 import { Link } from "react-router";
 
-import cationDmImage from "../../../assets/images/blog1image.png";
+import cationDmImage from "../../../assets/images/generated/cation-resin-dm-plant-guide.png";
 import cationSelectionImage from "../../../assets/images/blog12image.png";
 
 

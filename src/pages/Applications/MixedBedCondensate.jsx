@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
+import mixedBedGenerated from "../../assets/images/generated/mixed-bed-condensate-polishing.png";
+import mixedBedSupportImage from "../../assets/images/mixed-bed-resins.jpg";
 
 const C = {
   navy: "#0A2C4B", deep: "#051826", royal: "#1868A8", sky: "#4A9BD1",
@@ -22,16 +24,17 @@ const faqs = [
  ["Can AGRION MB-1151 replace my current mixed bed resin?","In most cases, yes. Match the cation and anion resin types, the cation-to-anion ratio and the working forms and it drops into the same duty. Share your outlet spec and current TDS and we’ll confirm the equivalent."],
 ];
 
-function ImagePlaceholder({second=false}) {
- return <div className="corner-bracket my-8 border border-[#C8DCEC] bg-[#F7FAFD] p-6 sm:p-8 shadow-[0_20px_40px_-15px_rgba(5,24,38,.08)]">
-   <div className="flex flex-col sm:flex-row gap-5 items-start">
-    <div className="w-14 h-14 shrink-0 bg-[#0A2C4B] text-white grid place-items-center font-mono text-xl">▣</div>
-    <div><span className="font-mono text-[10px] uppercase tracking-[.18em] text-[#B27B34] font-bold">Image to add</span>
-    <h4 className="font-serif text-xl text-[#0A2C4B] font-bold mt-2">{second?"Close-up of blended mixed-bed resin / polishing diagram":"Mixed bed / condensate polishing vessels in a power or DM plant"}</h4>
-    <p className="text-slate-600 text-sm mt-2">{second?"A product-level visual to break up the FAQ and reinforce the grade.":"A wide industrial shot that sets the context for the page."}</p>
-    <p className="mt-3 text-xs leading-relaxed text-slate-500 bg-white border border-[#C8DCEC] p-3"><b className="text-[#0A2C4B]">Prompt:</b> {second?"A crisp macro of intimately blended amber cation and blue anion resin beads (mixed bed) in a gloved hand or lab dish with soft bokeh — or a simple labelled diagram of the polishing flow (DM water / condensate → mixed-bed polisher → ultrapure to boiler) in the navy/green brand palette. Clean, technical, landscape 16:9.":"A clean industrial polishing hall showing tall mixed-bed / condensate-polisher pressure vessels with instrumentation (conductivity/resistivity meters), piping and valves; power-plant or DM-plant setting, blue-and-steel palette, professional documentary style, no people, landscape 16:9. Optional light AGRION / Toyota Chemical Industries branding."}</p></div>
-   </div>
- </div>
+function ImagePlaceholder({ second = false }) {
+  return (
+    <figure className="my-8 overflow-hidden border border-[#C8DCEC] bg-[#F7FAFD] shadow-sm">
+      <img
+        src={second ? mixedBedSupportImage : mixedBedGenerated}
+        alt={second ? "Mixed bed resin beads for ultrapure and condensate polishing service" : "Mixed bed condensate polishing system and resin process"}
+        loading="lazy"
+        className="block w-full aspect-[16/9] object-cover object-center"
+      />
+    </figure>
+  );
 }
 
 export default function MixedBedCondensatePolishing(){

@@ -1,16 +1,21 @@
 import React from "react";
 import { Link } from "react-router";
+import wastewaterGenerated from "../../assets/images/generated/wastewater-zld-treatment.png";
+import wastewaterSupportImage from "../../assets/images/ETP wastewater.jpg";
 
 const faqs = [["Which resins are used in effluent and wastewater treatment?", "Macroporous strong acid cation and chelating resins for heavy-metal removal and recovery, macroporous and weak base anion resins for organics and colour, and a two-bed demineraliser (AGRION C-100 H + A-400) to recover water for reuse or ZLD."], ["Which resin removes heavy metals from effluent?", "A macroporous strong acid cation resin such as AGRION C-100 MP, and where selectivity against a high sodium or calcium background is needed, a chelating resin from our specialty range that binds metals like copper, nickel, zinc and lead even at low concentration."], ["Do you supply resins for zero liquid discharge (ZLD)?", "Yes. Macroporous cation, chelating and demineralisation resins are used in ZLD and water-recovery trains to remove metals and dissolved salts so treated water can be recycled. Share your stream chemistry and we’ll advise the grades."], ["Can ion exchange recover valuable metals, not just remove them?", "Yes. Chelating and macroporous cation resins capture target metals selectively; on regeneration the metal is released in a concentrated stream, allowing recovery rather than disposal."], ["How does ion exchange help water reuse?", "After metals and organics are removed, a demineralisation stage strips the remaining dissolved salts, returning process-quality water that can be recycled into the plant instead of discharged."], ["Why macroporous resins for effluent duty?", "Effluent streams are often high in organics and prone to fouling. Macroporous grades resist organic fouling and osmotic shock and regenerate more cleanly than gel resins in these conditions."], ["Can you match the resin our ETP currently runs?", "In most cases, yes. Match on functional type, form, capacity and bead size, or share your target contaminant and current datasheet, and we’ll confirm the equivalent AGRION grade."]];
 const stages = [{"n": "1", "duty": "Duty A", "title": "Remove & recover heavy metals", "tag": "The grade", "text": "A macroporous strong acid cation resin, and where selectivity against high background salinity is needed a chelating resin, removes copper, nickel, zinc, lead and similar metals from effluent — to trace levels, and for recovery.", "items": [{"text": "AGRION C-100 MP"}, {"text": "Chelating (specialty)", "href": "/products/specialty-resins"}]}, {"n": "2", "duty": "Duty B", "title": "Remove organics & colour", "tag": "The grade", "text": "Macroporous and weak base anion resins scavenge organics and colour from effluent streams, protecting downstream stages and helping meet discharge or reuse targets.", "items": [{"text": "AGRION A-650 MP"}, {"text": "AGRION A-600 MP"}, {"text": "Anion resins", "href": "/products/anion-exchange-resins"}]}, {"n": "3", "duty": "Duty C", "title": "Demineralise recovered water for reuse / ZLD", "tag": "The grade", "text": "To recycle treated water back into the process or push toward zero liquid discharge, a two-bed demineraliser strips the remaining dissolved salts — returning process-quality water from effluent.", "items": [{"text": "AGRION C-100 H"}, {"text": "AGRION A-400"}, {"text": "DM plant", "href": "/applications/dm-plant-resin"}]}];
 function ImagePlaceholder({ second = false }) {
-  return <div className="my-8 border-2 border-dashed border-[#B7CDE0] bg-[#F6F9FC] p-6 sm:p-8 flex flex-col sm:flex-row gap-5 items-start">
-    <div className="w-14 h-14 shrink-0 bg-[#0A2C4B] text-white grid place-items-center text-2xl">▧</div>
-    <div><span className="font-mono text-[10px] uppercase tracking-[.16em] text-[#B27B34] font-bold">Image to add</span>
-    <h4 className="font-serif text-xl font-bold text-[#0A2C4B] mt-2">{second ? "Close-up of macroporous / chelating resin / ZLD flow diagram" : "Effluent treatment plant (ETP) / water-recycling skids"}</h4>
-    <p className="text-sm text-slate-600 mt-1">{second ? "A product-level visual to break up the FAQ and reinforce the grades." : "A wide industrial shot that sets the context for the page."}</p>
-    <p className="mt-3 text-xs italic text-slate-500 bg-white border border-[#D6E3EE] p-3"><b className="not-italic text-[#0A2C4B]">Prompt:</b> {second ? "A crisp macro of macroporous ion-exchange resin beads (or chelating resin) in a gloved hand or lab dish with soft bokeh — or a simple labelled diagram of an effluent-to-reuse flow (effluent → metal removal → organic removal → demineralisation → recycled water / ZLD) in the navy/green brand palette. Clean, technical, landscape 16:9." : "A clean industrial effluent-treatment / ZLD plant showing ion-exchange columns and recovery skids with piping, clarifiers or tanks in the background; blue-and-steel palette, professional documentary style, no people, landscape 16:9. Optional light AGRION / Toyota Chemical Industries branding on the columns."}</p>
-    </div></div>;
+  return (
+    <figure className="my-8 overflow-hidden border border-[#C8DCEC] bg-[#F7FAFD] shadow-sm">
+      <img
+        src={second ? wastewaterSupportImage : wastewaterGenerated}
+        alt={second ? "Industrial effluent treatment and wastewater recovery equipment" : "Industrial wastewater treatment and ZLD ion exchange process"}
+        loading="lazy"
+        className="block w-full aspect-[16/9] object-cover object-center"
+      />
+    </figure>
+  );
 }
 
 export default function ETPWastewaterTreatment() {
