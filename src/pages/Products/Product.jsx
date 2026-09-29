@@ -5,7 +5,6 @@ import anionCardImage from "../../assets/images/anion-exchange-resins.jpg";
 import mixedBedCardImage from "../../assets/images/mixed-bed-resins.jpg";
 import softenerCardImage from "../../assets/images/water softner resin.jpg";
 import specialtyCardImage from "../../assets/images/speciality resin.jpg";
-import productMainHeroGenerated from "../../assets/images/generated/product-main-hero-generated.png";
 
 const categories = [
   {
@@ -232,8 +231,8 @@ function Product() {
         {/* HERO */}
         <section className="relative overflow-hidden border-b border-[#DAE7F1] bg-white pb-16 pt-12 lg:pb-20 lg:pt-14">
           <div className="absolute inset-0 bg-tech-blueprint pointer-events-none" />
-          <div className="relative mx-auto grid max-w-[1440px] gap-12 px-5 lg:grid-cols-12 lg:items-center lg:px-8">
-            <div className="lg:col-span-7">
+          <div className="relative mx-auto max-w-[1440px] px-5 lg:px-8">
+            <div className="max-w-5xl">
               <div className="mb-5 inline-flex items-center gap-2 border border-[#DAE7F1] bg-white/80 px-3 py-2 font-mono text-[9px] font-bold tracking-[0.16em] text-[#1868A8]">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#B27B34]" />
                 PRODUCTS // ION EXCHANGE PORTFOLIO
@@ -286,30 +285,6 @@ function Product() {
               </div>
             </div>
 
-            <div className="lg:col-span-5">
-              <div className="relative overflow-hidden border border-[#0A2C4B]/10 bg-[#061729] shadow-[0_24px_48px_-12px_rgba(10,44,75,0.12)]">
-                <img
-                  src={productMainHeroGenerated}
-                  alt="Studio luxury macro photography of vibrant blue and golden amber ion exchange resin spherical beads"
-                  className="h-[430px] w-full object-cover opacity-90 lg:h-[500px]"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#061729] via-transparent to-[#061729]/10" />
-                {/* <div className="absolute left-5 top-5 border border-white/25 bg-[#061729]/70 px-3 py-2 font-mono text-[9px] font-bold tracking-wider text-white backdrop-blur-sm">
-                  0.3 – 1.2 MM SIZED BEADS
-                </div> */}
-                {/* <div className="absolute bottom-20 right-5 border border-[#DF9B42]/50 bg-[#061729]/70 px-3 py-2 font-mono text-[9px] font-bold tracking-wider text-[#DF9B42] backdrop-blur-sm">
-                  CHEMICAL SYNTHESIS CONTROL
-                </div> */}
-                <div className="absolute bottom-0 left-0 right-0 grid grid-cols-2 border-t border-white/15 bg-[#061729]/80 backdrop-blur-sm">
-                  <div className="p-4 font-mono text-[8px] uppercase tracking-wider text-slate-300">
-                    RESIN MORPHOLOGY: SPHERICAL GEL / MACRO
-                  </div>
-                  <div className="border-l border-white/15 p-4 text-right font-mono text-[8px] uppercase tracking-wider text-[#DF9B42]">
-                    100% IN-HOUSE VAPI SYNTHESIS
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 

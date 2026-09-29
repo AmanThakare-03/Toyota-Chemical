@@ -288,52 +288,17 @@ function Hero() {
                 </div>
           </div>
 
-          <div className="lg:col-span-5 relative hero-frame-group">
-            <div className="deco-frame-gold absolute -top-5 -left-5 w-full h-full border border-[#B27B34]/40 pointer-events-none hidden sm:block" />
-            <div className="deco-frame-navy absolute -bottom-5 -right-5 w-48 h-48 border-b-2 border-r-2 border-[#0A2C4B]/60 pointer-events-none hidden sm:block" />
-            <div className="absolute -top-8 right-6 font-mono text-[10px] text-[#B27B34] tracking-widest hidden sm:block">
-              [FIG 01 // AGRION]
-            </div>
-
-            <div className="relative z-10 bg-white p-3 shadow-2xl border border-[#0A2C4B]/15 chamfer-tr-lg">
-              <div className="relative overflow-hidden group">
-                <div className="w-full h-80 sm:h-96 bg-gradient-to-br from-[#F6F9FC] via-white to-amber-50 flex items-center justify-center relative">
-                  <div className="absolute inset-0 opacity-40 resin-grid" />
-                  <img
-                    src={anionCardImage}
-                    alt="Anion exchange resin beads"
-                    className="absolute inset-0 w-full h-full object-cover object-center"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A2C4B]/25 via-transparent to-transparent" />
-                  <div className="absolute bottom-4 left-4 bg-[#0A2C4B]/90 backdrop-blur-md text-white px-4 py-2 border-l-2 border-[#B27B34] text-[10px] font-mono tracking-widest uppercase shadow-lg">
-                    ANION EXCHANGE • AGRION RANGE
-                  </div>
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md text-[#0A2C4B] px-3 py-1 font-mono text-[10px] font-semibold tracking-wider uppercase border border-slate-200 shadow-sm">
-                    0.3 – 1.2 MM
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-3 grid grid-cols-12 gap-3 items-center bg-[#F6F9FC] p-3 border border-slate-200">
-                <div className="col-span-4 relative overflow-hidden border border-slate-300 h-16 bg-white">
+          <div className="lg:col-span-5">
+            <div className="bg-white border border-[#0A2C4B]/15 shadow-lg p-4 sm:p-5 chamfer-tr-lg">
+              <div className="overflow-hidden bg-[#F6F9FC] border border-slate-200">
+                <div className="relative overflow-hidden border-b border-slate-200 bg-white h-64 sm:h-72 lg:h-80">
                   <img src={anionCardImage} alt="Anion exchange resin beads" className="w-full h-full object-cover object-center" />
                 </div>
-                <div className="col-span-8">
-                  <div className="text-[10px] font-mono text-[#B27B34] uppercase tracking-wider font-semibold">Product Family</div>
-                  <div className="text-xs font-serif font-bold text-[#0A2C4B]">STRONG &amp; WEAK BASE ANION</div>
-                  <div className="text-[11px] text-slate-500 mt-0.5">DM, mixed bed, silica and organic-removal duties</div>
+                <div className="p-5 sm:p-6">
+                  <div className="text-[10px] font-mono text-[#B27B34] uppercase tracking-wider font-semibold mb-2">Product Family</div>
+                  <div className="text-lg sm:text-xl font-serif font-bold text-[#0A2C4B]">STRONG & WEAK BASE ANION</div>
+                  <div className="text-sm text-slate-500 mt-2 leading-relaxed">DM, mixed bed, silica and organic-removal duties</div>
                 </div>
-              </div>
-            </div>
-
-            <div className="absolute -bottom-6 -left-6 z-20 bg-[#0A2C4B] text-white p-4 shadow-xl border border-[#B27B34]/40 hidden md:block max-w-xs chamfer-tr">
-              <div className="flex items-center space-x-2 text-[10px] font-mono text-[#B27B34] uppercase">
-                <span className="w-2 h-2 rounded-full bg-[#B27B34] animate-pulse" />
-                <span>ENGINEERED ANION PERFORMANCE</span>
-              </div>
-              <div className="text-xs font-serif mt-1 font-medium leading-tight">
-                High-purity demineralisation, mixed-bed polishing and organic-removal applications.
               </div>
             </div>
           </div>
@@ -643,8 +608,8 @@ function MainContent() {
           </section>
 
           <Spotlight className="bg-white border border-[#0A2C4B]/10 p-8 sm:p-10 shadow-sm relative luxury-card" id="toyota-anion">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-              <div className="md:col-span-7 space-y-4">
+            <div>
+              <div className="space-y-4">
                 <div className="text-[10px] font-mono uppercase tracking-widest text-[#B27B34] font-bold flex items-center gap-2">
                   <span className="w-2 h-2 bg-[#B27B34]" />
                   TOYOTA CHEMICAL INDUSTRIES
@@ -661,19 +626,7 @@ function MainContent() {
                   ))}
                 </div>
               </div>
-              <div className="md:col-span-5">
-                <div className="relative border-2 border-[#0A2C4B] p-2 bg-[#F6F9FC] chamfer-tr h-52 flex items-center justify-center">
-                  <div className="w-36 h-36 rounded-full border-2 border-[#B27B34] flex items-center justify-center bg-white shadow-xl">
-                    <div className="text-center">
-                      <div className="font-serif text-5xl font-bold text-[#0A2C4B]">T</div>
-                      <div className="text-[9px] font-mono text-[#B27B34] tracking-widest">VAPI WORKS</div>
-                    </div>
-                  </div>
-                  <div className="absolute -bottom-3 -right-3 bg-[#0A2C4B] text-white text-[9px] font-mono px-3 py-1 border border-[#B27B34] tracking-widest uppercase shadow-md">
-                    TOYOTA CHEMICAL
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </Spotlight>
 

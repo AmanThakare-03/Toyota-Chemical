@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import waterSofteningHeroImage from "../../assets/images/water softning.jpg";
 import waterSofteningGenerated from "../../assets/images/generated/water-softening-system.png";
 import waterSofteningSupportImage from "../../assets/images/water softning.jpg";
 
@@ -33,7 +34,7 @@ export default function WaterSoftening() {
     `}</style>
 
     <main>
-      <section className="blueprint relative border-b border-[#C8DCEC] bg-[#F7FAFD]">
+      <section className="blueprint relative border-b border-[#C8DCEC] bg-[#F7FAFD]" style={{backgroundImage: `linear-gradient(90deg, rgba(247,250,253,.92) 0%, rgba(247,250,253,.84) 30%, rgba(247,250,253,.62) 50%, rgba(247,250,253,.30) 70%, rgba(247,250,253,.10) 100%), linear-gradient(180deg, rgba(247,250,253,.04) 0%, rgba(247,250,253,.14) 100%), url(${waterSofteningHeroImage})`, backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat"}}>
         <div className="max-w-[1160px] mx-auto px-6 py-8 sm:py-10 lg:py-14">
           <p className="font-mono text-xs text-slate-500 mb-7"><Link to="/">Home</Link><span className="mx-2">›</span><Link to="/applications">Applications</Link><span className="mx-2">›</span><b className="text-[#0A2C4B]">Water Softening</b></p>
           <div className="max-w-4xl">

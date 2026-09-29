@@ -2,7 +2,9 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router";
-import aboutUsHeroImage from "../../assets/images/generated/about-us-ion-exchange-manufacturing-hero.png";
+import manojGOzaImage from "../../assets/images/directors/manoj-g-oza.png";
+import kumarSOzaImage from "../../assets/images/directors/kumar-s-oza.png";
+import pariksheetMOzaImage from "../../assets/images/directors/pariksheet-m-oza.png";
 
 const faqData = [
   {
@@ -70,6 +72,7 @@ const milestones = [
 const leadership = [
   {
     initials: "MO",
+    image: manojGOzaImage,
     name: "Manoj G Oza",
     role: "Managing Director",
     description:
@@ -78,6 +81,7 @@ const leadership = [
   },
   {
     initials: "KO",
+    image: kumarSOzaImage,
     name: "Kumar S Oza",
     role: "Jt Managing Director & Technical Director",
     description:
@@ -86,6 +90,7 @@ const leadership = [
   },
   {
     initials: "PO",
+    image: pariksheetMOzaImage,
     name: "Pariksheet M Oza",
     role: "Director",
     description:
@@ -262,9 +267,9 @@ function AboutUs() {
           <section className="relative bg-[#F7FAFD] bg-grid-pattern pt-12 pb-20 border-b border-[#DAE7F1] overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-8">
 
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              <div className="max-w-5xl mx-auto">
 
-                <div className="lg:col-span-7 space-y-6">
+                <div className="space-y-6">
 
                   <div className="inline-flex items-center space-x-2 px-3 py-1 bg-white border border-[#B27B34]/30 text-[11px] font-mono-custom tracking-widest text-[#B27B34] uppercase">
                     <span className="w-1.5 h-1.5 bg-[#B27B34]" />
@@ -326,53 +331,6 @@ function AboutUs() {
                     </a>
                   </div>
 
-                </div>
-
-                {/* Hero image */}
-                <div className="lg:col-span-5">
-                  <div className="relative mx-auto max-w-md lg:max-w-none">
-
-                    <div className="absolute -top-3 -right-3 w-full h-full border-2 border-dashed border-[#DAE7F1] pointer-events-none" />
-
-                    <div className="relative tech-border tech-corner-gold bg-white p-3 shadow-elevated">
-
-                      <div className="flex items-center justify-between text-[10px] font-mono-custom text-slate-400 pb-2 mb-2 border-b border-slate-100">
-
-                        <span className="flex items-center space-x-1.5">
-                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-
-                          <span className="text-[#0A2C4B] font-semibold">
-                            OWN POLYMERISATION FACILITY
-                          </span>
-                        </span>
-
-                        <span>GIDC VAPI // PLANT 01</span>
-                      </div>
-
-                      <div className="relative overflow-hidden aspect-[4/3] bg-slate-900 border border-slate-200">
-                        <img
-                          src={aboutUsHeroImage}
-                          alt="Toyota Chemical modern chemical plant polymerization vessels"
-                          className="w-full h-full object-cover object-center brightness-95 contrast-105 hover:scale-105 transition-transform duration-700"
-                        />
-
-                        <div className="absolute bottom-3 left-3 bg-[#0A2C4B]/90 backdrop-blur-sm px-2.5 py-1 text-[10px] font-mono-custom text-[#B27B34] border border-[#B27B34]/30">
-                          FOUNDED 1972 // SYNTHESIS VESSELS
-                        </div>
-                      </div>
-
-                      <div className="pt-3 flex items-center justify-between text-[11px] font-mono-custom">
-                        <span className="text-slate-500">
-                          100% IN-HOUSE VAPI SYNTHESIS
-                        </span>
-
-                        <span className="text-[#1868A8] font-semibold">
-                          ISO 9001 AUDITED
-                        </span>
-                      </div>
-
-                    </div>
-                  </div>
                 </div>
 
               </div>
@@ -510,22 +468,24 @@ function AboutUs() {
                   >
                     <div>
 
-                      <div className="flex items-center space-x-4 mb-6">
-
-                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#0A2C4B] to-[#1868A8] text-[#B27B34] flex items-center justify-center font-mono-custom font-bold text-xl border-2 border-[#B27B34]/40 shadow-sm">
-                          {person.initials}
+                      <div className="mb-6 overflow-hidden border border-[#DAE7F1] bg-[#F7FAFD]">
+                        <div className="aspect-[4/3] w-full flex items-center justify-center bg-white p-3">
+                          <img
+                            src={person.image}
+                            alt={person.name}
+                            className="h-full w-full object-contain object-center"
+                          />
                         </div>
+                      </div>
 
-                        <div>
-                          <h3 className="text-xl font-bold text-[#0A2C4B] leading-tight">
-                            {person.name}
-                          </h3>
+                      <div className="mb-6">
+                        <h3 className="text-xl font-bold text-[#0A2C4B] leading-tight">
+                          {person.name}
+                        </h3>
 
-                          <p className="text-xs font-mono-custom text-[#B27B34] uppercase font-semibold tracking-wider mt-1">
-                            {person.role}
-                          </p>
-                        </div>
-
+                        <p className="text-xs font-mono-custom text-[#B27B34] uppercase font-semibold tracking-wider mt-1">
+                          {person.role}
+                        </p>
                       </div>
 
                       <p className="text-slate-600 text-sm leading-relaxed">

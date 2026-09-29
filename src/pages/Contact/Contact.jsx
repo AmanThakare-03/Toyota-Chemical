@@ -164,31 +164,31 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          {/*ht Column: Precision Diagnostic Visual Fra*/}
-          <div className="lg:col-span-5 relative">
+          
+          {/* <div className="lg:col-span-5 relative">
             <div className="relative bg-white border border-brand-blueprint p-2.5 shadow-xl corner-brackets">
-              {/*ating Specification Overla*/}
+              
               <div className="relative overflow-hidden bg-slate-900 aspect-square max-h-[380px] w-full">
                 <img alt="Toyota Chemical Ion Exchange Resin Spherical Beads under laboratory inspection" className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700 ease-out" src={contactQualityLabGenerated} />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent"></div>
-                {/*rlay Diagnosti*/}
-                {/* <div className="absolute top-3 left-3 bg-brand-dark/90 backdrop-blur border border-brand-gold/50 px-2.5 py-1 text-[10px] font-mono text-brand-goldLight flex items-center gap-1.5">
+                
+                <div className="absolute top-3 left-3 bg-brand-dark/90 backdrop-blur border border-brand-gold/50 px-2.5 py-1 text-[10px] font-mono text-brand-goldLight flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-ping"></span>
                   0.3 – 1.2 MM SIZED BEADS // QC VERIFIED
-                </div> */}
-                {/* <div className="absolute bottom-3 right-3 bg-brand-navy/95 border border-brand-blueprint/40 px-3 py-1.5 text-[11px] font-mono text-white flex items-center gap-2">
+                </div>
+                <div className="absolute bottom-3 right-3 bg-brand-navy/95 border border-brand-blueprint/40 px-3 py-1.5 text-[11px] font-mono text-white flex items-center gap-2">
                   <span className="text-brand-gold font-bold">
                     REPLY:
                   </span>
                   SAME WORKING DAY
-                </div> */}
-                {/* <div className="absolute bottom-3 left-3 text-[10px] font-mono text-slate-300">
+                </div>
+                <div className="absolute bottom-3 left-3 text-[10px] font-mono text-slate-300">
                   <span>
                     RESIN MORPHOLOGY: SPHERICAL GEL / MACRO
                   </span>
-                </div> */}
+                </div>
               </div>
-              {/*hnical Plant Tagline Under Ima*/}
+              
               <div className="pt-3 pb-1 px-2 flex items-center justify-between text-[11px] font-mono border-t border-brand-blueprint mt-2 text-slate-600">
                 <span className="flex items-center gap-1.5">
                   <span className="w-2 h-2 border border-brand-gold inline-block"></span>
@@ -199,11 +199,11 @@ export default function Contact() {
                 </span>
               </div>
             </div>
-            {/*hitectural Accent T*/}
+            
             <div className="absolute -bottom-4 -left-4 hidden sm:block bg-brand-navy text-white text-[10px] font-mono py-1 px-3 border-l-2 border-brand-gold shadow-md">
               FACILITY: GIDC VAPI OWN PLANT
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

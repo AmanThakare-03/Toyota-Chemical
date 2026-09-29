@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import boilerFeedHeroImage from "../../assets/images/bolier feed water.jpg";
 import boilerFeedGenerated from "../../assets/images/generated/boiler-feed-water-treatment.png";
 import mixedBedSupportImage from "../../assets/images/generated/mixed-bed-condensate-polishing.png";
 
@@ -27,7 +28,7 @@ export default function BoilerFeedWater() {
   @keyframes clientScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}} .client-track{animation:clientScroll 55s linear infinite} .client-track:hover{animation-play-state:paused} @media(prefers-reduced-motion:reduce){.client-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
   `}</style>
   <main>
-   <section className="blueprint relative border-b border-[#C8DCEC] bg-[#F7FAFD]"><div className="max-w-[1160px] mx-auto px-6 py-8 sm:py-10 lg:py-14">
+   <section className="blueprint relative border-b border-[#C8DCEC] bg-[#F7FAFD]" style={{backgroundImage: `linear-gradient(90deg, rgba(247,250,253,.92) 0%, rgba(247,250,253,.84) 30%, rgba(247,250,253,.62) 50%, rgba(247,250,253,.30) 70%, rgba(247,250,253,.10) 100%), linear-gradient(180deg, rgba(247,250,253,.04) 0%, rgba(247,250,253,.14) 100%), url(${boilerFeedHeroImage})`, backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat"}}><div className="max-w-[1160px] mx-auto px-6 py-8 sm:py-10 lg:py-14">
     <p className="font-mono text-xs text-slate-500 mb-7"><Link to="/">Home</Link><span className="mx-2">›</span><Link to="/applications">Applications</Link><span className="mx-2">›</span><b className="text-[#0A2C4B]">Boiler Feed Water</b></p>
     <div className="max-w-4xl"><p className="font-mono text-xs uppercase tracking-[.18em] text-[#B27B34] font-semibold">// Applications — Boiler Feed Water</p><h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#0A2C4B] leading-[1.05] mt-5">Boiler feed water treatment <em className="text-[#1868A8]">resin</em></h1><p className="mt-6 max-w-3xl text-base sm:text-lg text-slate-600 leading-relaxed">The ion exchange resins that soften, dealkalise, demineralise and polish boiler feed water — protecting boilers and turbines from scale and corrosion.</p><div className="flex flex-wrap gap-3 mt-7"><Link to="/contact" className="bg-[#1868A8] text-white px-6 py-3 font-semibold text-sm hover:bg-[#0A2C4B] transition">Enquire now</Link><Link to="/products" className="border border-[#0A2C4B] text-[#0A2C4B] bg-white px-6 py-3 font-semibold text-sm hover:bg-[#EFF6FC] transition">View our resins</Link></div><div className="flex flex-wrap gap-2 mt-7">{["Since 1972","ISO 9001:2015","ISO 14001:2015","TDS with every grade"].map(x=><span key={x} className="font-mono text-[11px] text-[#0A2C4B] border border-[#C8DCEC] bg-white px-3 py-2">{x}</span>)}</div></div>
    </div></section>

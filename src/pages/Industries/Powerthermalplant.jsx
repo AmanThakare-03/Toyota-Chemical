@@ -119,7 +119,7 @@ html{scroll-behavior:smooth}
       <main id="main">
 
 
-  <div className="ihero"><div className="wrap">
+  <div className="ihero" style={{backgroundImage: `linear-gradient(90deg, rgba(247,250,253,.92) 0%, rgba(247,250,253,.84) 30%, rgba(247,250,253,.62) 50%, rgba(247,250,253,.30) 70%, rgba(247,250,253,.10) 100%), linear-gradient(180deg, rgba(247,250,253,.04) 0%, rgba(247,250,253,.14) 100%), url("https://images.unsplash.com/photo-1773517459626-f468797f22cc?auto=format&fit=crop&w=1200&q=80")`, backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat"}}><div className="wrap">
     <p className="crumb"><Link to="/">Home</Link> › <Link to="/industries">Industries</Link> › Power / Thermal Plants</p>
     <p className="eyebrow">Industries — Power / Thermal Plants</p>
     <h1>Ion exchange resins for power & thermal plants</h1>

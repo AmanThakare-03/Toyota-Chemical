@@ -123,52 +123,17 @@ function Hero() {
             </div>
           </div>
 
-          <div className="lg:col-span-5 relative hero-frame-group">
-            <div className="deco-frame-gold absolute -top-5 -left-5 w-full h-full border border-[#B27B34]/40 pointer-events-none hidden sm:block" />
-            <div className="deco-frame-navy absolute -bottom-5 -right-5 w-48 h-48 border-b-2 border-r-2 border-[#0A2C4B]/60 pointer-events-none hidden sm:block" />
-
-            <div className="relative z-10 bg-white p-3 shadow-2xl border border-[#0A2C4B]/15 chamfer-tr-lg">
-              <div className="relative overflow-hidden group">
-                <div className="w-full h-80 sm:h-96 bg-gradient-to-br from-[#F6F9FC] via-white to-amber-50 flex items-center justify-center relative">
-                  <div className="absolute inset-0 opacity-40 resin-grid" />
-
-                  <img
-                    src={cationCardImage}
-                    alt="Cation exchange resin beads"
-                    className="absolute inset-0 w-full h-full object-cover object-center"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A2C4B]/25 via-transparent to-transparent" />
-
-                  <div className="absolute bottom-4 left-4 bg-[#0A2C4B]/90 backdrop-blur-md text-white px-4 py-2 border-l-2 border-[#B27B34] text-[10px] font-mono tracking-widest uppercase shadow-lg">
-                    SAC + WAC · Na⁺ / H⁺
-                  </div>
-
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md text-[#0A2C4B] px-3 py-1 font-mono text-[10px] font-semibold tracking-wider uppercase border border-slate-200 shadow-sm">
-                    06 GRADES
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-3 grid grid-cols-12 gap-3 items-center bg-[#F6F9FC] p-3 border border-slate-200">
-                <div className="col-span-4 relative overflow-hidden border border-slate-300 h-16 bg-white">
+          <div className="lg:col-span-5">
+            <div className="bg-white border border-[#0A2C4B]/15 shadow-lg p-4 sm:p-5 chamfer-tr-lg">
+              <div className="overflow-hidden bg-[#F6F9FC] border border-slate-200">
+                <div className="relative overflow-hidden border-b border-slate-200 bg-white h-64 sm:h-72 lg:h-80">
                   <img src={cationCardImage} alt="Cation exchange resin beads" className="w-full h-full object-cover object-center" />
                 </div>
-                <div className="col-span-8">
-                  <div className="text-[10px] font-mono text-[#B27B34] uppercase tracking-wider font-semibold">Product Family</div>
-                  <div className="text-xs font-serif font-bold text-[#0A2C4B]">CATION EXCHANGE RESINS</div>
-                  <div className="text-[11px] text-slate-500 mt-0.5">Softening, DM plant, dealkalisation and heavy-metal / ZLD duty</div>
+                <div className="p-5 sm:p-6">
+                  <div className="text-[10px] font-mono text-[#B27B34] uppercase tracking-wider font-semibold mb-2">Product Family</div>
+                  <div className="text-lg sm:text-xl font-serif font-bold text-[#0A2C4B]">CATION EXCHANGE RESINS</div>
+                  <div className="text-sm text-slate-500 mt-2 leading-relaxed">Softening, DM plant, dealkalisation and heavy-metal / ZLD duty</div>
                 </div>
-              </div>
-            </div>
-
-            <div className="absolute -bottom-6 -left-6 z-20 bg-[#0A2C4B] text-white p-4 shadow-xl border border-[#B27B34]/40 hidden md:block max-w-xs chamfer-tr">
-              <div className="flex items-center space-x-2 text-[10px] font-mono text-[#B27B34] uppercase">
-                <span className="w-2 h-2 rounded-full bg-[#B27B34] animate-pulse" />
-                <span>CATION EXCHANGE PERFORMANCE</span>
-              </div>
-              <div className="text-xs font-serif mt-1 font-medium leading-tight">
-                Strong and weak acid cation resins in sodium and hydrogen form.
               </div>
             </div>
           </div>

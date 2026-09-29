@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import mixedBedHeroImage from "../../assets/images/mixed bed condensate polishing.jpg";
 import mixedBedGenerated from "../../assets/images/generated/mixed-bed-condensate-polishing.png";
 import mixedBedSupportImage from "../../assets/images/mixed-bed-resins.jpg";
 
@@ -46,7 +47,7 @@ export default function MixedBedCondensatePolishing(){
   .corner-bracket{position:relative}.corner-bracket:before,.corner-bracket:after{content:'';position:absolute;width:12px;height:12px;border-color:#B27B34;border-style:solid;pointer-events:none}.corner-bracket:before{top:-1px;left:-1px;border-width:2px 0 0 2px}.corner-bracket:after{right:-1px;bottom:-1px;border-width:0 2px 2px 0}
   .clients{padding:64px 0;background:#F7FAFD;border-top:1px solid #C8DCEC;text-align:center}.clients>.wrap{max-width:80rem;margin:auto;padding:0 1rem}.clients .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#1868A8}.clients h2{font-family:'EB Garamond',serif;font-size:2rem;color:#0A2C4B}.marquee{margin-top:26px;overflow:hidden}.track{display:flex;width:max-content;animation:cscroll 55s linear infinite}.marquee:hover .track{animation-play-state:paused}.chip{flex:0 0 auto;width:184px;height:108px;margin-right:18px;background:#fff;border:1px solid #C8DCEC;display:flex;align-items:center;justify-content:center;padding:16px 20px;box-shadow:0 6px 18px rgba(10,44,75,.06)}.chip img{max-width:100%;max-height:66px;width:auto;object-fit:contain}@keyframes cscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}`}</style>
 
-  <section className="relative overflow-hidden border-b border-[#C8DCEC] bg-gradient-to-b from-white via-[#F7FAFD] to-[#EFF6FC] blueprint pt-14 pb-16">
+  <section className="relative overflow-hidden border-b border-[#C8DCEC] bg-gradient-to-b from-white via-[#F7FAFD] to-[#EFF6FC] blueprint pt-14 pb-16" style={{backgroundImage: `linear-gradient(90deg, rgba(247,250,253,.92) 0%, rgba(247,250,253,.84) 30%, rgba(247,250,253,.62) 50%, rgba(247,250,253,.30) 70%, rgba(247,250,253,.10) 100%), linear-gradient(180deg, rgba(247,250,253,.04) 0%, rgba(247,250,253,.14) 100%), url(${mixedBedHeroImage})`, backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat"}}>
    <div className="absolute -top-32 right-0 w-96 h-96 bg-[#4A9BD1]/10 rounded-full blur-3xl" />
    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
     <p className="font-mono text-xs text-slate-500 mb-7"><Link to="/">Home</Link> <span className="mx-2">›</span><Link to="/applications">Applications</Link><span className="mx-2">›</span><b className="text-[#0A2C4B]">Mixed Bed / Condensate Polishing</b></p>
