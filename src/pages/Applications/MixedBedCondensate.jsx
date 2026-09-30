@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
 import mixedBedHeroImage from "../../assets/images/mixed bed condensate polishing.jpg";
-import mixedBedGenerated from "../../assets/images/generated/mixed-bed-condensate-polishing.png";
-import mixedBedSupportImage from "../../assets/images/mixed-bed-resins.jpg";
+import mixedBedGenerated from "../../assets/images/application-real/appl5-1.png";
+import mixedBedSupportImage from "../../assets/images/application-real/appl5-2.png";
 
 const C = {
   navy: "#0A2C4B", deep: "#051826", royal: "#1868A8", sky: "#4A9BD1",
@@ -47,14 +47,14 @@ export default function MixedBedCondensatePolishing(){
   .corner-bracket{position:relative}.corner-bracket:before,.corner-bracket:after{content:'';position:absolute;width:12px;height:12px;border-color:#B27B34;border-style:solid;pointer-events:none}.corner-bracket:before{top:-1px;left:-1px;border-width:2px 0 0 2px}.corner-bracket:after{right:-1px;bottom:-1px;border-width:0 2px 2px 0}
   .clients{padding:64px 0;background:#F7FAFD;border-top:1px solid #C8DCEC;text-align:center}.clients>.wrap{max-width:80rem;margin:auto;padding:0 1rem}.clients .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#1868A8}.clients h2{font-family:'EB Garamond',serif;font-size:2rem;color:#0A2C4B}.marquee{margin-top:26px;overflow:hidden}.track{display:flex;width:max-content;animation:cscroll 55s linear infinite}.marquee:hover .track{animation-play-state:paused}.chip{flex:0 0 auto;width:184px;height:108px;margin-right:18px;background:#fff;border:1px solid #C8DCEC;display:flex;align-items:center;justify-content:center;padding:16px 20px;box-shadow:0 6px 18px rgba(10,44,75,.06)}.chip img{max-width:100%;max-height:66px;width:auto;object-fit:contain}@keyframes cscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}`}</style>
 
-  <section className="relative overflow-hidden border-b border-[#C8DCEC] bg-gradient-to-b from-white via-[#F7FAFD] to-[#EFF6FC] blueprint pt-14 pb-16" style={{backgroundImage: `linear-gradient(90deg, rgba(247,250,253,.92) 0%, rgba(247,250,253,.84) 30%, rgba(247,250,253,.62) 50%, rgba(247,250,253,.30) 70%, rgba(247,250,253,.10) 100%), linear-gradient(180deg, rgba(247,250,253,.04) 0%, rgba(247,250,253,.14) 100%), url(${mixedBedHeroImage})`, backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat"}}>
+  <section className="relative overflow-hidden border-b border-[#C8DCEC] bg-gradient-to-b from-white via-[#F7FAFD] to-[#EFF6FC] blueprint pt-14 pb-16" style={{backgroundImage: `linear-gradient(90deg, rgba(247,250,253,1) 0%, rgba(247,250,253,.995) 28%, rgba(247,250,253,.97) 42%, rgba(247,250,253,.90) 52%, rgba(247,250,253,.70) 61%, rgba(247,250,253,.38) 70%, rgba(247,250,253,.12) 82%, rgba(247,250,253,.03) 100%), linear-gradient(180deg, rgba(247,250,253,.10) 0%, rgba(247,250,253,.16) 100%), url(${mixedBedHeroImage})`, backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat"}}>
    <div className="absolute -top-32 right-0 w-96 h-96 bg-[#4A9BD1]/10 rounded-full blur-3xl" />
    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
     <p className="font-mono text-xs text-slate-500 mb-7"><Link to="/">Home</Link> <span className="mx-2">›</span><Link to="/applications">Applications</Link><span className="mx-2">›</span><b className="text-[#0A2C4B]">Mixed Bed / Condensate Polishing</b></p>
-    <div className="max-w-4xl">
+    <div className="max-w-[720px]">
      <div className="inline-flex border border-[#C8DCEC] bg-white px-3 py-1.5 font-mono text-xs tracking-wider text-[#1868A8] font-semibold">// APPLICATIONS — MIXED BED / CONDENSATE POLISHING</div>
-     <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#0A2C4B] leading-[1.05] mt-5">Mixed bed &amp; <em className="text-[#1868A8]">condensate polishing resin</em></h1>
-     <p className="mt-6 max-w-3xl text-base sm:text-lg text-slate-600 leading-relaxed">The ready-mixed cation and anion resin that polishes demineralised water and returning condensate to ultrapure quality — protecting boilers, turbines and high-purity processes.</p>
+     <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#0A2C4B] leading-[1.04] mt-5 max-w-[720px] [text-shadow:0_1px_0_rgba(255,255,255,.85)]">Mixed bed &amp; <em className="text-[#1868A8]">condensate polishing resin</em></h1>
+     <p className="mt-6 max-w-[680px] text-base sm:text-lg text-[#34495E] font-medium leading-relaxed">The ready-mixed cation and anion resin that polishes demineralised water and returning condensate to ultrapure quality — protecting boilers, turbines and high-purity processes.</p>
      <div className="flex flex-wrap gap-4 mt-7"><Link to="/contact" className="px-7 py-3.5 bg-[#B27B34] text-white font-mono text-xs uppercase tracking-widest font-semibold">Enquire now</Link><Link to="/products" className="px-7 py-3.5 bg-white border border-[#C8DCEC] text-[#0A2C4B] font-mono text-xs uppercase tracking-widest font-semibold">View our resins</Link></div>
      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-10 pt-7 border-t border-[#C8DCEC]">{["Since 1972","ISO 9001:2015","ISO 14001:2015","TDS with every grade"].map(x=><div key={x} className="bg-white/80 border border-[#C8DCEC] px-3 py-3 font-mono text-xs font-semibold text-[#0A2C4B]">{x}</div>)}</div>
     </div>

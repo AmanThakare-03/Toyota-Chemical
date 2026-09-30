@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
 import waterSofteningHeroImage from "../../assets/images/water softning.jpg";
-import waterSofteningGenerated from "../../assets/images/generated/water-softening-system.png";
-import waterSofteningSupportImage from "../../assets/images/water softning.jpg";
+import waterSofteningGenerated from "../../assets/images/application-real/appl6-1.png";
+import waterSofteningSupportImage from "../../assets/images/application-real/appl6-2.png";
 
 const faqs = [["How does water softening resin work?", "A sodium-form strong acid cation resin exchanges the calcium and magnesium hardness in the water for sodium. When the resin exhausts it is regenerated with common salt (brine), which recharges it with sodium and returns it to service."], ["Which AGRION grade should I use — C-60 or C-80?", "AGRION C-60 for standard softening, and AGRION C-80 — a higher-crosslink grade — for harder water, higher temperatures or heavier cycling where longer working life matters."], ["Why has my water softener stopped removing hardness?", "Usually the resin is fouled (iron, organics), degraded by chlorine or age, or simply exhausted beyond regeneration. A change to a fresh softening grade restores capacity — share your symptoms and water details and we’ll advise."], ["How is softening resin regenerated?", "On the sodium cycle, with a common salt (brine) solution. When hardness starts to break through, brine recharges the resin with sodium and it returns to service — a low-cost cycle repeated over many years."], ["Can I use softening for boiler feed or cooling water?", "Yes. Softening protects boilers, cooling towers and heat exchangers from scale. For higher-pressure boilers, softening is combined with demineralisation — see boiler feed water ."], ["What bead size and capacity do the softening grades have?", "Particle size is 0.3–1.2 mm; AGRION C-60 has a total exchange capacity of 1.7 meq/ml and C-80 of 1.8 meq/ml. Full specifications are in each grade’s TDS."], ["Can AGRION softening resin replace the resin in my softener?", "In most cases, yes. Match on ionic form (sodium), capacity and bead size and an AGRION grade drops straight into your softener. Send us your current grade or datasheet and we’ll confirm the equivalent."]];
 const stages = [
@@ -34,13 +34,13 @@ export default function WaterSoftening() {
     `}</style>
 
     <main>
-      <section className="blueprint relative border-b border-[#C8DCEC] bg-[#F7FAFD]" style={{backgroundImage: `linear-gradient(90deg, rgba(247,250,253,.92) 0%, rgba(247,250,253,.84) 30%, rgba(247,250,253,.62) 50%, rgba(247,250,253,.30) 70%, rgba(247,250,253,.10) 100%), linear-gradient(180deg, rgba(247,250,253,.04) 0%, rgba(247,250,253,.14) 100%), url(${waterSofteningHeroImage})`, backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat"}}>
+      <section className="blueprint relative border-b border-[#C8DCEC] bg-[#F7FAFD]" style={{backgroundImage: `linear-gradient(90deg, rgba(247,250,253,1) 0%, rgba(247,250,253,.995) 28%, rgba(247,250,253,.97) 42%, rgba(247,250,253,.90) 52%, rgba(247,250,253,.70) 61%, rgba(247,250,253,.38) 70%, rgba(247,250,253,.12) 82%, rgba(247,250,253,.03) 100%), linear-gradient(180deg, rgba(247,250,253,.10) 0%, rgba(247,250,253,.16) 100%), url(${waterSofteningHeroImage})`, backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat"}}>
         <div className="max-w-[1160px] mx-auto px-6 py-8 sm:py-10 lg:py-14">
           <p className="font-mono text-xs text-slate-500 mb-7"><Link to="/">Home</Link><span className="mx-2">›</span><Link to="/applications">Applications</Link><span className="mx-2">›</span><b className="text-[#0A2C4B]">Water Softening</b></p>
-          <div className="max-w-4xl">
+          <div className="max-w-[720px]">
             <p className="font-mono text-xs uppercase tracking-[.18em] text-[#B27B34] font-semibold">// Applications — Water Softening</p>
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#0A2C4B] leading-[1.05] mt-5">Water softening <em className="text-[#1868A8]">resin</em></h1>
-            <p className="mt-6 max-w-3xl text-base sm:text-lg text-slate-600 leading-relaxed">The sodium-cycle strong acid cation resin that removes hardness — protecting boilers, cooling systems and process equipment from scale.</p>
+            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#0A2C4B] leading-[1.04] mt-5 max-w-[720px] [text-shadow:0_1px_0_rgba(255,255,255,.85)]">Water softening <em className="text-[#1868A8]">resin</em></h1>
+            <p className="mt-6 max-w-[680px] text-base sm:text-lg text-[#34495E] font-medium leading-relaxed">The sodium-cycle strong acid cation resin that removes hardness — protecting boilers, cooling systems and process equipment from scale.</p>
             <div className="flex flex-wrap gap-3 mt-7"><Link to="/contact" className="bg-[#1868A8] text-white px-6 py-3 font-semibold text-sm hover:bg-[#0A2C4B] transition">Enquire now</Link><Link to="/products" className="border border-[#0A2C4B] text-[#0A2C4B] bg-white px-6 py-3 font-semibold text-sm hover:bg-[#EFF6FC] transition">View our resins</Link></div>
             <div className="flex flex-wrap gap-2 mt-7">{["Since 1972","ISO 9001:2015","ISO 14001:2015","TDS with every grade"].map(x=><span key={x} className="font-mono text-[11px] text-[#0A2C4B] border border-[#C8DCEC] bg-white px-3 py-2">{x}</span>)}</div>
           </div>

@@ -236,8 +236,8 @@ import React from "react";
 
 import { Link } from "react-router";
 
-import cationDmImage from "../../../assets/images/generated/cation-resin-dm-plant-guide.png";
-import cationSelectionImage from "../../../assets/images/blog12image.png";
+import cationDmImage from "../../../assets/images/cation exchange resin.jpg";
+import cationSelectionImage from "../../../assets/images/Dm plant application.jpg";
 
 
 
@@ -364,7 +364,7 @@ h1,h2{font-family:"EB Garamond",serif;color:var(--navy)}h1{font-size:72px;line-h
 <div className="imgph">
   <img
     src={cationDmImage}
-    alt="cation resin for DM plant — strong acid cation column"
+    alt="amber cation exchange resin beads for DM plant service"
     loading="lazy"
   />
 </div>
@@ -476,7 +476,7 @@ h1,h2{font-family:"EB Garamond",serif;color:var(--navy)}h1{font-size:72px;line-h
 <div className="imgph">
   <img
     src={cationSelectionImage}
-    alt="how to select cation resin for DM plant — decision diagram"
+    alt="industrial DM plant ion exchange vessels"
     loading="lazy"
   />
 </div>

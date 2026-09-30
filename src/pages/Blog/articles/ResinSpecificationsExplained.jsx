@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
-import bead1 from "../../../assets/images/generated/resin-specifications-sieve-analysis.png";
-import bead2 from "../../../assets/images/bead2.png";
+import bead1 from "../../../assets/images/cation anion resion.jpg";
+import bead2 from "../../../assets/images/mixed-bed-resins.jpg";
 
 export default function ResinSpecificationsExplained() {
   return (
@@ -75,7 +75,7 @@ h1,h2{font-family:"EB Garamond",serif;color:var(--navy)}h1{font-size:72px;line-h
 <div className="imgph">
   <img
     src={bead1}
-    alt="cation resin for DM plant — strong acid cation column"
+    alt="ion exchange resin beads for specification comparison"
     loading="lazy"
   />
 </div>
@@ -123,7 +123,7 @@ h1,h2{font-family:"EB Garamond",serif;color:var(--navy)}h1{font-size:72px;line-h
 <div className="imgph">
   <img
     src={bead2}
-    alt="cation resin for DM plant — strong acid cation column"
+    alt="ion exchange resin beads for specification comparison"
     loading="lazy"
   />
 </div>

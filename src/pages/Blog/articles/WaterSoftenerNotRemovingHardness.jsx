@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
-import water1 from "../../../assets/images/water1.png";
-import water2 from "../../../assets/images/water2.png";
+import water1 from "../../../assets/images/water softning.jpg";
+import water2 from "../../../assets/images/water1.png";
 
 export default function WaterSoftenerNotRemovingHardness() {
   return (

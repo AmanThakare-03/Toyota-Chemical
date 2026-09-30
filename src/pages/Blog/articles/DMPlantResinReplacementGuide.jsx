@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
-import dmplant1 from "../../../assets/images/generated/dm-plant-resin-replacement-guide.png";
-import dmplant2 from "../../../assets/images/DMPlant2.png";
+import dmplant1 from "../../../assets/images/Dm plant application.jpg";
+import dmplant2 from "../../../assets/images/blog1image.png";
 
 export default function DMPlantResinReplacementGuide() {
   return (
@@ -91,7 +91,7 @@ h1,h2{font-family:"EB Garamond",serif;color:var(--navy)}h1{font-size:72px;line-h
 <div className="imgph">
   <img
     src={dmplant1}
-    alt="cation resin for DM plant — strong acid cation column"
+    alt="DM plant ion exchange vessels and piping"
     loading="lazy"
   />
 </div>
@@ -144,7 +144,7 @@ h1,h2{font-family:"EB Garamond",serif;color:var(--navy)}h1{font-size:72px;line-h
 <div className="imgph">
   <img
     src={dmplant2}
-    alt="how to select cation resin for DM plant — decision diagram"
+    alt="industrial ion exchange treatment vessels in a DM plant"
     loading="lazy"
   />
 </div>

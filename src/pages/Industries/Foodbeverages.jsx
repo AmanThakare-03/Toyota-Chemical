@@ -54,12 +54,12 @@ html{scroll-behavior:smooth}
 .ihero{position:relative;background:linear-gradient(180deg,#fff 0%,#F7FAFD 48%,#F1F4F7 100%);color:var(--ink);overflow:hidden;border-bottom:1px solid var(--line)}
 .ihero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(to right,rgba(10,44,75,.045) 1px,transparent 1px),linear-gradient(to bottom,rgba(10,44,75,.045) 1px,transparent 1px);background-size:40px 40px;pointer-events:none}
 .ihero .wrap{position:relative;padding-top:64px;padding-bottom:88px;text-align:left}
-.ihero .crumb{font-size:13px;color:var(--muted);margin-bottom:30px}
+.ihero .crumb{font-size:13px;color:#43576A;margin-bottom:30px;font-weight:500}
 .ihero .crumb a{color:var(--blue)}
 .ihero .eyebrow{color:var(--navy)}
-.ihero h1{max-width:15ch;margin:16px 0 0}
-.ihero .sub{max-width:720px;margin:24px 0 0;font-size:18px;color:var(--muted)}
-.ihero .brand{margin:12px 0 0;color:var(--navy);font-weight:600}
+.ihero h1{max-width:700px;margin:16px 0 0;text-shadow:0 1px 0 rgba(255,255,255,.88)}
+.ihero .sub{max-width:640px;margin:24px 0 0;font-size:18px;color:#34495E;font-weight:500;text-shadow:0 1px 0 rgba(255,255,255,.82)}
+.ihero .brand{max-width:640px;margin:12px 0 0;color:var(--navy);font-weight:700;text-shadow:0 1px 0 rgba(255,255,255,.82)}
 .ihero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
 .ihero .cta .btn-wa{color:var(--navy);border-color:var(--line);background:#fff}
 .ihero .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
@@ -116,7 +116,7 @@ html{scroll-behavior:smooth}
       <main id="main">
 
 
-  <div className="ihero" style={{backgroundImage: `linear-gradient(90deg, rgba(247,250,253,.92) 0%, rgba(247,250,253,.84) 30%, rgba(247,250,253,.62) 50%, rgba(247,250,253,.30) 70%, rgba(247,250,253,.10) 100%), linear-gradient(180deg, rgba(247,250,253,.04) 0%, rgba(247,250,253,.14) 100%), url("https://images.unsplash.com/photo-1530037335614-e68828dcf258?auto=format&fit=crop&w=1200&q=80")`, backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat"}}><div className="wrap">
+  <div className="ihero" style={{backgroundImage: `linear-gradient(90deg, rgba(247,250,253,1) 0%, rgba(247,250,253,.995) 28%, rgba(247,250,253,.97) 42%, rgba(247,250,253,.90) 52%, rgba(247,250,253,.70) 61%, rgba(247,250,253,.38) 70%, rgba(247,250,253,.12) 82%, rgba(247,250,253,.03) 100%), linear-gradient(180deg, rgba(247,250,253,.10) 0%, rgba(247,250,253,.16) 100%), url("https://images.unsplash.com/photo-1530037335614-e68828dcf258?auto=format&fit=crop&w=1200&q=80")`, backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat"}}><div className="wrap">
     <p className="crumb"><Link to="/">Home</Link> › <Link to="/industries">Industries</Link> › Food & Beverage</p>
     <p className="eyebrow">Industries — Food & Beverage</p>
     <h1>Ion exchange resins for food & beverage</h1>
