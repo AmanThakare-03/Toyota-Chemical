@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
 import mixedBedHeroImage from "../../assets/images/mixed bed condensate polishing.jpg";
-import mixedBedGenerated from "../../assets/images/application-real/appl5-1.png";
-import mixedBedSupportImage from "../../assets/images/application-real/appl5-2.png";
+import mixedBedGenerated from "../../assets/images/application-real/ap51.png";
+import mixedBedSupportImage from "../../assets/images/application-real/ap52.png";
 
 const C = {
   navy: "#0A2C4B", deep: "#051826", royal: "#1868A8", sky: "#4A9BD1",
