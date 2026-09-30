@@ -1,13 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
 
-/*
-  Toyota Chemical Industries — Industries
-  React.js single-file version.
-  CONTENT: preserved from your uploaded industries(1).html.
-  DESIGN: rebuilt to match the supplied Industries reference design:
-  #0A2C4B / #06182B / #1868A8 / #B27B34 / #E5A855 / #F6F9FC.
-*/
 
 export default function Industries() {
   return (
