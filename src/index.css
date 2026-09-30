@@ -119,3 +119,10 @@ svg {
   font-family: Inter, Arial, sans-serif !important;
   font-style: normal !important;
 }
+
+/* Unified site typography: one clean normal font everywhere. */
+html, body, #root, #root * {
+  font-family: Inter, Arial, sans-serif !important;
+  font-style: normal !important;
+}
+
