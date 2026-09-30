@@ -105,3 +105,17 @@ svg {
   -webkit-overflow-scrolling: touch;
   touch-action: pan-y;
 }
+
+
+/* =========================================================
+   TYPOGRAPHY NORMALIZATION
+   Keep the existing layout/colors, but remove decorative serif/cursive
+   styling across the project in favor of a clean normal UI font.
+========================================================= */
+:where(h1, h2, h3, h4, h5, h6),
+.font-serif,
+.font-garamond,
+.service-area-font-serif {
+  font-family: Inter, Arial, sans-serif !important;
+  font-style: normal !important;
+}
