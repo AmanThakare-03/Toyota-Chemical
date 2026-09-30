@@ -46,7 +46,259 @@ export default function Industries() {
 .clients{background:white;text-align:center;border-top:1px solid var(--line)}.clients h2{margin-top:10px!important}.marquee{margin-top:34px;overflow:hidden}.track{display:flex;width:max-content;animation:cscroll 55s linear infinite}.marquee:hover .track{animation-play-state:paused}.chip{width:184px;height:108px;flex:0 0 auto;margin-right:18px;background:white;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:18px;box-shadow:0 4px 14px rgba(10,44,75,.04)}.chip img{max-height:65px;width:auto;object-fit:contain}@keyframes cscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(max-width:1100px){.wrap,.ribbon{padding-left:40px;padding-right:40px}.isec-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:800px){.intro{grid-template-columns:1fr}.ribbon .in{grid-template-columns:1fr 1fr}.isec-grid{grid-template-columns:1fr}.f-grid{grid-template-columns:1fr 1fr}.ihero h1{font-size:52px}}
-@media(max-width:600px){.wrap,.ribbon{padding-left:22px;padding-right:22px}.ihero .wrap{padding-top:40px;padding-bottom:70px}.ihero h1{font-size:43px}.ihero .badges{width:100%}.ihero .badges span{width:50%;border-bottom:1px solid var(--line)}.ribbon{margin-top:-28px}.ribbon .st{padding:18px}.f-grid{grid-template-columns:1fr}.industries-page section{padding:68px 0}.industries-page h2{font-size:36px}.isec-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:24px!important;width:100%!important}.isec.image-card{display:flex!important;width:100%!important;min-width:0!important;min-height:360px!important;padding:28px!important;clip-path:none!important}.isec.image-card .card-bg{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important}.isec.image-card>span,.isec.image-card>b{display:block!important;visibility:visible!important;opacity:1!important}}
+// @media(max-width:600px){.wrap,.ribbon{padding-left:22px;padding-right:22px}.ihero .wrap{padding-top:40px;padding-bottom:70px}.ihero h1{font-size:43px}.ihero .badges{width:100%}.ihero .badges span{width:50%;border-bottom:1px solid var(--line)}.ribbon{margin-top:-28px}.ribbon .st{padding:18px}.f-grid{grid-template-columns:1fr}.industries-page section{padding:68px 0}.industries-page h2{font-size:36px}.isec-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:24px!important;width:100%!important}.isec.image-card{display:flex!important;width:100%!important;min-width:0!important;min-height:360px!important;padding:28px!important;clip-path:none!important}.isec.image-card .card-bg{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important}.isec.image-card>span,.isec.image-card>b{display:block!important;visibility:visible!important;opacity:1!important}}
+@media(max-width:600px){
+
+  /* ===== MOBILE WIDTH / OVERFLOW FIX ===== */
+  html,
+  body{
+    width:100%;
+    max-width:100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+  }
+
+  .industries-page{
+    width:100%;
+    max-width:100vw;
+    overflow-x:hidden;
+  }
+
+  .industries-page *,
+  .industries-page *::before,
+  .industries-page *::after{
+    box-sizing:border-box;
+  }
+
+  /* ===== CONTAINER ===== */
+  .industries-page .wrap,
+  .ribbon{
+    width:100%;
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  /* ===== HERO - REFERENCE IMAGE STYLE ===== */
+  .ihero{
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+  }
+
+  .ihero .wrap{
+    width:100%;
+    max-width:100%;
+    padding-top:30px;
+    padding-bottom:58px;
+    text-align:center;
+  }
+
+  .ihero .crumb{
+    display:none;
+  }
+
+  .ihero .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:auto;
+    margin:0 auto 25px;
+    padding:8px 13px;
+    border:1px solid rgba(178,123,52,.28);
+    color:var(--gold);
+    font-size:10px;
+    line-height:1;
+    letter-spacing:.18em;
+  }
+
+  .ihero .eyebrow::before{
+    content:"■";
+    font-size:7px;
+    margin-right:9px;
+    color:var(--gold);
+  }
+
+  .ihero h1{
+    width:100%;
+    max-width:340px;
+    margin:0 auto;
+    font-family:"Inter",sans-serif;
+    font-size:36px;
+    line-height:1.08;
+    letter-spacing:-.04em;
+    font-weight:700;
+    text-align:center;
+    color:var(--deep);
+    overflow-wrap:break-word;
+  }
+
+  .ihero h1:after{
+    display:none;
+  }
+
+  .ihero .sub{
+    max-width:340px;
+    margin:24px auto 0;
+    font-size:15px;
+    line-height:1.65;
+    text-align:center;
+  }
+
+  .ihero .brand{
+    max-width:340px;
+    margin:14px auto 0;
+    text-align:center;
+    line-height:1.6;
+  }
+
+  .ihero .cta{
+    width:100%;
+    justify-content:center;
+    margin-top:26px;
+  }
+
+  .ihero .cta .btn{
+    max-width:100%;
+  }
+
+  .ihero .badges{
+    width:100%;
+    max-width:100%;
+    margin:30px auto 0;
+  }
+
+  .ihero .badges span{
+    width:50%;
+    padding:11px 8px;
+    border-bottom:1px solid var(--line);
+  }
+
+  /* ===== STATS RIBBON ===== */
+  .ribbon{
+    margin-top:-28px;
+  }
+
+  .ribbon .in{
+    width:100%;
+    max-width:100%;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .ribbon .st{
+    min-width:0;
+    padding:18px 12px;
+  }
+
+  .ribbon .st b{
+    font-size:25px;
+  }
+
+  /* ===== CONTENT ===== */
+  .industries-page section{
+    width:100%;
+    max-width:100%;
+    padding:68px 0;
+    overflow:hidden;
+  }
+
+  .intro{
+    width:100%;
+    min-width:0;
+    grid-template-columns:minmax(0,1fr);
+    gap:35px;
+  }
+
+  .intro > div,
+  .ctx,
+  .sec-head{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+  }
+
+  .industries-page h2{
+    font-size:36px;
+    overflow-wrap:break-word;
+  }
+
+  /* ===== INDUSTRY CARDS ===== */
+  .isec-grid{
+    display:grid !important;
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    grid-template-columns:minmax(0,1fr) !important;
+    gap:24px !important;
+    margin:0 !important;
+  }
+
+  .isec{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+  }
+
+  .isec.image-card{
+    display:flex !important;
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    min-height:360px !important;
+    padding:28px 24px !important;
+    clip-path:none !important;
+    overflow:hidden !important;
+  }
+
+  .isec.image-card .card-bg{
+    position:absolute !important;
+    inset:0 !important;
+    display:block !important;
+    width:100% !important;
+    max-width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+  }
+
+  .isec.image-card > span,
+  .isec.image-card > b{
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+  }
+
+  .isec.image-card b{
+    font-size:27px;
+  }
+
+  .isec.image-card .d{
+    width:100%;
+    max-width:100%;
+  }
+
+  /* ===== BOTTOM CTA ===== */
+  .band,
+  .band .wrap{
+    width:100%;
+    max-width:100%;
+  }
+
+  .band .acts{
+    width:100%;
+  }
+
+  /* ===== STICKY BAR OVERFLOW PROTECTION ===== */
+  .sticky{
+    max-width:100vw;
+  }
+
+  .f-grid{
+    grid-template-columns:1fr;
+  }
+}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}.track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
 `}</style>
       <div className="industries-page">
