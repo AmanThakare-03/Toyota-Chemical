@@ -112,7 +112,57 @@ html{scroll-behavior:smooth}
 @media(max-width:1024px){.wrap,.ribbon{padding-left:40px;padding-right:40px}header }
 @media(max-width:840px){.intro,.qband{grid-template-columns:1fr}.qband .pts{grid-template-columns:1fr}.card2{grid-template-columns:1fr}.card2 .prob{border-right:0;border-bottom:1px solid var(--line)}.ind-grid{grid-template-columns:1fr}}
 @media(max-width:760px){.ribbon .in{grid-template-columns:1fr 1fr}.ribbon .st:nth-child(2){border-right:0}.ribbon .st:nth-child(-n+2){border-bottom:1px solid var(--line)}}
-@media(max-width:640px){.wrap,.ribbon{padding-left:24px;padding-right:24px}.ihero .wrap{padding-top:52px;padding-bottom:72px}.step{grid-template-columns:42px 1fr}.step .num b{width:38px;height:38px}.qband .pts{grid-template-columns:1fr}}
+// @media(max-width:640px){.wrap,.ribbon{padding-left:24px;padding-right:24px}.ihero .wrap{padding-top:52px;padding-bottom:72px}.step{grid-template-columns:42px 1fr}.step .num b{width:38px;height:38px}.qband .pts{grid-template-columns:1fr}}
+@media(max-width:640px){
+html,body{width:100%;max-width:100%;margin:0;padding:0;overflow-x:hidden}
+.chemical-page{width:100%;max-width:100vw;overflow-x:hidden}
+.chemical-page *,.chemical-page *:before,.chemical-page *:after{box-sizing:border-box}
+.chemical-page .wrap,.ribbon{width:100%;max-width:100%;margin-left:auto;margin-right:auto;padding-left:20px;padding-right:20px}
+
+.ihero{width:100%;max-width:100%;overflow:hidden;background-size:cover!important;background-position:center center!important;background-repeat:no-repeat!important}
+.ihero:after{display:none}
+.ihero .wrap{width:100%;max-width:100%;padding-top:30px;padding-bottom:58px;text-align:center}
+.ihero .crumb{display:none}
+.ihero .eyebrow{display:inline-flex;align-items:center;justify-content:center;width:auto;max-width:100%;margin:0 auto 25px;padding:8px 12px;border:1px solid rgba(178,123,52,.28);color:var(--gold);font-size:9px;line-height:1.2;letter-spacing:.14em;text-align:center}
+.ihero .eyebrow:before{content:"■";font-size:7px;margin-right:8px;color:var(--gold);flex:0 0 auto}
+.ihero h1{width:100%;max-width:350px;margin:0 auto;font-family:Inter,Arial,sans-serif;font-size:36px;line-height:1.08;letter-spacing:-.04em;font-weight:700;text-align:center;color:var(--deep);overflow-wrap:break-word}
+.ihero .sub{width:100%;max-width:350px;margin:23px auto 0;font-size:15px;line-height:1.65;text-align:center}
+.ihero .brand{width:100%;max-width:350px;margin:13px auto 0;text-align:center;line-height:1.55}
+.ihero .cta{width:100%;max-width:100%;justify-content:center;margin-top:26px}
+.ihero .cta .btn{max-width:100%}
+.ihero .badges{width:100%;max-width:100%;justify-content:center;margin-top:30px}
+.ihero .badges span{min-width:0;max-width:100%}
+
+.ribbon{margin-top:-28px}
+.ribbon .in{width:100%;max-width:100%;grid-template-columns:1fr 1fr}
+.ribbon .st{min-width:0;padding:18px 12px;overflow-wrap:anywhere}
+.ribbon .st b{font-size:24px}
+.ribbon .st span{font-size:10px}
+
+.chemical-page section{width:100%;max-width:100%;padding:68px 0;overflow:hidden}
+.intro,.qband{width:100%;max-width:100%;min-width:0;grid-template-columns:minmax(0,1fr);gap:32px}
+.intro>div,.ctx,.sec-head,.qside,.faq{width:100%;max-width:100%;min-width:0}
+.chemical-page h1,.chemical-page h2,.chemical-page h3,.chemical-page p{max-width:100%;overflow-wrap:break-word}
+.chemical-page h2{font-size:34px}
+
+.steps{width:100%;max-width:100%}
+.step{width:100%;max-width:100%;min-width:0;grid-template-columns:38px minmax(0,1fr);gap:12px}
+.step .num b{width:38px;height:38px}
+.card2{width:100%;max-width:100%;min-width:0;grid-template-columns:minmax(0,1fr)}
+.card2 .prob,.card2 .sol{width:100%;max-width:100%;min-width:0;padding:22px 18px}
+.card2 .prob{border-right:0;border-bottom:1px solid var(--line)}
+.gtags{width:100%;max-width:100%}
+.gtags a{max-width:100%;overflow-wrap:anywhere}
+
+.qband .pts{width:100%;max-width:100%;grid-template-columns:minmax(0,1fr)}
+.qpt{width:100%;max-width:100%;min-width:0}
+.qside{padding:28px 20px}
+.ind-grid{width:100%;max-width:100%;grid-template-columns:minmax(0,1fr)}
+.ind-grid a{width:100%;max-width:100%;min-width:0}
+.band,.band .wrap{width:100%;max-width:100%}
+.band .wrap{padding-left:20px!important;padding-right:20px!important}
+.band .acts{width:100%;max-width:100%}
+}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}`}</style>
       <a className="skip" href="#main">Skip to content</a>
 
